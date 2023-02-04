@@ -2,32 +2,44 @@
 
 button.action-btn,
 a.action-btn {
-    border-radius: 0.625rem;
-    text-align: center;
-    line-height: 100%;
-    min-width: 10rem;
-    min-height: 2rem;
+    border-radius: var(--rad-tny);
+    padding: 0.5rem 1rem;
+}
+button.action-btn:hover,
+a.action-btn:hover {
+    box-shadow: var(--shadow-sml);
+    transform: scale(1.01);
 }
 
-.action-btn.black {
-    background-color: black;
+.action-btn.gray-dark {
+    background-color: var(--clr-gray-dark);
     color: white;
 }
-.action-btn.purple-solid {
+.action-btn.purple-dark {
     background-color: var(--clr-purple-primary);
     color: white;
 }
-.action-btn.purple-bordered {
-    background-color: var(--clr-purple-primary);
-    color: white;
-    border-color: white;
-    border: 1px;
+.action-btn.purple-light {
+    background-color: var(--clr-purple-light);
+    color: var(--clr-purple-primary);
 }
-.action-btn.green {
-    background-color: white;
+.action-btn.green-dark {
+    background-color: var(--clr-green-dark);
+    color: white;
+}
+.action-btn.green-light {
+    background-color: var(--clr-green-light);
     color: var(--clr-green-dark);
-    border-color: var(--clr-green-dark);
-    border: 1px;
+}
+
+.action-btn.bordered-dark {
+    background-color: inherit;
+    color: white;
+    border: 2px solid white;
+}
+.action-btn.bordered-dark:hover {
+    background-color: white;
+    color: inherit;
 }
 
 /* Sidebar */
