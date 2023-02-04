@@ -1,0 +1,52 @@
+nav.nav-main {
+    position: sticky;
+    top: 1rem;
+    left: 1rem;
+    right: 1rem;
+    margin: 1rem;
+    padding: 1.2rem 1.5rem;
+    border-radius: var(--rad-med) var(--rad-med) var(--rad-med) var(--rad-med);
+    background-color: var(--clr-purple-primary);
+    color: white;
+    box-shadow: var(--shadow-med);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+span.logo-combo {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.4rem;
+    padding: 0.5rem 0.7rem;
+    border-radius: var(--rad-sml) var(--rad-sml) var(--rad-sml) var(--rad-sml);
+}
+
+img.logo-icon {
+    width: 2rem;
+    padding-bottom: 0.2em;
+}
+
+span.tray-notif-profile {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+button.btn-notif {
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+/* Any element that is against a dark background that should appear clickable */
+.clickable-on-dark {
+    transition: background-color var(--tns-hov-quick);
+}
+.clickable-on-dark:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    cursor: pointer;
+}
