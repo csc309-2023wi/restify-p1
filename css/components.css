@@ -104,7 +104,7 @@ div.popup {
     right: 0;
     min-width: 6rem;
     max-width: 90vw;
-    margin-top: 0.5rem;
+    margin: 0.5rem auto auto auto;
     padding: 0;
     border: 1px var(--clr-gray-light) solid;
     border-radius: var(--rad-sml) var(--rad-sml) var(--rad-sml) var(--rad-sml);
@@ -120,7 +120,8 @@ div.popup ul li {
 div.popup ul li:last-child {
     border-bottom: none;
 }
-div.popup ul li:hover {
+div.popup ul li:hover,
+div.popup ul li:focus {
     background-color: var(--clr-gray-light);
 }
 
@@ -172,7 +173,6 @@ div.popup-fixed ul li img {
  */
 div.popup-drawer-scrollable {
     width: 20rem;
-    max-width: 90vw;
     max-height: 25rem;
     overflow-y: auto;
 }
