@@ -107,3 +107,12 @@ footer {
 footer .license {
     font-weight: 300;
 }
+
+button {
+    background-color: none;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0;
+    padding: 0;
+}
