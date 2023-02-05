@@ -1,3 +1,97 @@
+/* || Shared Stateful Components */
+
+/* Any element that is against a dark background that should appear clickable */
+.clickable-on-dark {
+    transition: background-color var(--tns-hov-quick);
+}
+.clickable-on-dark:hover,
+.clickable-on-dark:focus {
+    background-color: rgba(255, 255, 255, 0.15);
+    cursor: pointer;
+}
+
+/* Action Buttons */
+button.action-btn,
+a.action-btn {
+    border-radius: var(--rad-tny);
+    padding: 0.5rem 1rem;
+}
+button.action-btn:hover,
+a.action-btn:hover {
+    box-shadow: var(--shadow-sml);
+    transform: scale(1.01);
+}
+
+.action-btn.gray-dark {
+    background-color: var(--clr-gray-dark);
+    color: white;
+}
+.action-btn.purple-dark {
+    background-color: var(--clr-purple-primary);
+    color: white;
+}
+.action-btn.purple-light {
+    background-color: var(--clr-purple-light);
+    color: var(--clr-purple-primary);
+}
+.action-btn.green-dark {
+    background-color: var(--clr-green-dark);
+    color: white;
+}
+.action-btn.green-light {
+    background-color: var(--clr-green-light);
+    color: var(--clr-green-dark);
+}
+
+.action-btn.bordered-dark {
+    background-color: inherit;
+    color: white;
+    border: 2px solid white;
+}
+.action-btn.bordered-dark:hover {
+    background-color: white;
+    color: inherit;
+}
+
+/* || Sidebar */
+
+aside.sidebar {
+    position: sticky;
+    top: 5rem;
+    left: 0;
+    max-width: 20rem;
+    min-width: 15rem;
+    min-height: 20rem;
+    background: var(--clr-green-bg);
+    margin: 2rem 3rem 5rem 0;
+    padding: 1.5rem;
+    border-radius: 0 var(--rad-med) var(--rad-med) 0;
+    word-break: break-all;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+aside.sidebar::before,
+aside.sidebar::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 2.94rem;
+    width: 2.94rem;
+    background: transparent;
+}
+aside.sidebar::before {
+    bottom: 100%;
+    border-bottom-left-radius: 50%;
+    box-shadow: 0 1.47rem 0 0 var(--clr-green-bg);
+}
+aside.sidebar::after {
+    top: 100%;
+    border-top-left-radius: 50%;
+    box-shadow: 0 -1.47rem 0 0 var(--clr-green-bg);
+}
+
 /* || Navigation Bar Styles */
 
 nav.nav-main {
@@ -82,19 +176,8 @@ span.avatar-slideout img {
     transition: transform var(--tns-hov-quick);
 }
 
-/* || Shared Stateful Components */
-
-/* Any element that is against a dark background that should appear clickable */
-.clickable-on-dark {
-    transition: background-color var(--tns-hov-quick);
-}
-.clickable-on-dark:hover,
-.clickable-on-dark:focus {
-    background-color: rgba(255, 255, 255, 0.15);
-    cursor: pointer;
-}
-
 /* || Popup Menus */
+
 div.popup {
     display: flex;
     visibility: hidden;
@@ -181,6 +264,8 @@ div.popup-drawer-scrollable > * {
     width: 100%;
 }
 
+/* || Notification Preview Strip */
+
 div.notif-strip {
     display: flex;
     flex-direction: column;
@@ -234,3 +319,5 @@ div.notif-strip p.notif-preview {
     margin-bottom: 0;
     max-height: 3.5rem;
 }
+
+/* || Property Cards */
