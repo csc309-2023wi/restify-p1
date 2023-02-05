@@ -1,3 +1,5 @@
+/* || Navigation Bar Styles */
+
 nav.nav-main {
     position: sticky;
     top: 1rem;
@@ -48,6 +50,11 @@ button.btn-avatar {
     border-radius: var(--rad-sml) var(--rad-sml) var(--rad-sml) var(--rad-sml);
 }
 
+button.btn-avatar:hover span.avatar-slideout img,
+button.btn-avatar:focus span.avatar-slideout img {
+    transform: translateY(0.2rem);
+}
+
 span.avatar-container {
     width: 3rem;
     height: 3rem;
@@ -72,13 +79,86 @@ span.avatar-slideout {
 
 span.avatar-slideout img {
     max-width: 100%;
+    transition: transform var(--tns-hov-quick);
 }
+
+/* || Shared Stateful Components */
 
 /* Any element that is against a dark background that should appear clickable */
 .clickable-on-dark {
     transition: background-color var(--tns-hov-quick);
 }
-.clickable-on-dark:hover {
+.clickable-on-dark:hover,
+.clickable-on-dark:focus {
     background-color: rgba(255, 255, 255, 0.15);
     cursor: pointer;
+}
+
+/* || Popup Menus */
+div.popup {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    min-width: 6rem;
+    max-width: 90vw;
+    margin-top: 0.5rem;
+    padding: 0;
+    border: 1px var(--clr-gray-light) solid;
+    border-radius: var(--rad-sml) var(--rad-sml) var(--rad-sml) var(--rad-sml);
+    overflow: hidden;
+    background-color: white;
+    box-shadow: var(--shadow-med);
+    transition: opacity var(--tns-hov-quick);
+}
+
+/* Supply this class to the parent of the popup */
+.popup-parent {
+    position: relative;
+}
+.popup-parent::after {
+    /* prevents cursor from falling through the margin */
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: -1rem;
+    height: 1rem;
+    background: transparent;
+}
+.popup-parent:hover div.popup,
+.popup-parent:focus div.popup {
+    display: flex;
+    opacity: 1;
+}
+
+/* Popup menus with fixed number of elements; chain with .popup */
+div.popup-fixed ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+div.popup-fixed ul li {
+    text-align: left;
+    padding: 0.5rem;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1px var(--clr-gray-light) solid;
+}
+div.popup-fixed ul li:last-child {
+    border-bottom: none;
+}
+div.popup-fixed ul li:hover {
+    background-color: var(--clr-gray-light);
+}
+
+/* Popup menus with arbitrary number of elements, fixed max-height, scrollable; 
+ * chain with .popup
+ */
+div.popup-drawer-scrollable {
 }

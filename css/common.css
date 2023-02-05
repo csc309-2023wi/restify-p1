@@ -43,7 +43,7 @@
     --font-size-sml: 0.8rem;
 
     /* || Transitions */
-    --tns-hov-quick: ease 0.1s;
+    --tns-hov-quick: ease-in-out 0.1s;
 }
 
 html {

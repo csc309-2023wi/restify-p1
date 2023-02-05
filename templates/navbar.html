@@ -1,7 +1,7 @@
 <nav class="nav-main">
     <a href="index.html">
         <span class="logo-combo clickable-on-dark" onclick="r">
-            <img class="logo-icon" src="icons/logo-icon.svg" alt="Logo Icon" />
+            <img class="logo-icon" src="icons/logo-icon-green-light.svg" alt="Logo Icon" />
             <h1>Restify</h1>
         </span>
     </a>
@@ -9,16 +9,30 @@
     <!-- Search Bar Goes Here -->
 
     <span class="tray-notif-avatar">
-        <button class="btn-notif clickable-on-dark">
-            <img src="icons/bell-filled.svg" alt="Bell" />
+        <button class="btn-notif clickable-on-dark popup-parent">
+            <img src="icons/bell-filled-white.svg" alt="Bell" />
+            <!-- Notification Popup -->
+            <div class="popup popup-drawer-scrollable">
+                <!-- content for the notif popup goes here -->
+                <p>Stuffdsfkjhnsdlfknhsdjlkfhbljskdbflkjsdfhbksfkjfkjshfklshdlfkhsdlfj</p>
+            </div>
         </button>
-        <button class="btn-avatar">
+        <button class="btn-avatar popup-parent">
             <span class="avatar-container">
                 <img class="avatar" src="images/user-avatar-default.png" alt="Avatar" />
             </span>
             <span class="avatar-slideout">
                 <img src="icons/chevron-down-green-dark.svg" alt="▾" />
             </span>
+            <!-- Avatar Menu Popup -->
+            <div class="popup popup-fixed">
+                <!-- content for the avatar popup goes here -->
+                <ul>
+                    <li><span>Dashboard</span></li>
+                    <li><span>Profile</span></li>
+                    <li><span>Log out</span><img src="" alt="Exit" /></li>
+                </ul>
+            </div>
         </button>
     </span>
 </nav>
