@@ -17,7 +17,9 @@ a.action-btn {
     padding: 0.5rem 1rem;
 }
 button.action-btn:hover,
-a.action-btn:hover {
+a.action-btn:hover,
+button.action-btn:focus,
+a.action-btn:focus {
     box-shadow: var(--shadow-sml);
     transform: scale(1.01);
 }
@@ -48,7 +50,8 @@ a.action-btn:hover {
     color: white;
     border: 2px solid white;
 }
-.action-btn.bordered-dark:hover {
+.action-btn.bordered-dark:hover,
+.action-btn.bordered-dark:focus {
     background-color: white;
     color: inherit;
 }
@@ -95,20 +98,20 @@ aside.sidebar::after {
 /* Property Cards (Generic) */
 
 div.property-card {
-    box-shadow: var(--shadow-med);
+    box-shadow: var(--shadow-sml);
     border-radius: var(--rad-med);
-    border-width: 1px;
-    border-color: var(--clr-gray-light);
+    border: 1px var(--clr-gray-light) solid;
     background-color: white;
     width: 18rem;
     height: 19rem;
     position: relative;
+    transition: transform var(--tns-hov-quick), box-shadow var(--tns-hov-quick);
 }
 
 .property-card:hover {
-    box-shadow: var(--shadow-lrg);
-    border-width: 2px;
+    box-shadow: var(--shadow-med);
     cursor: pointer;
+    transform: scale(1.01);
 }
 
 img.property-img {
@@ -130,7 +133,7 @@ div.property-text {
     font-size: var(--font-size-sml);
 }
 
-.property-text p, 
+.property-text p,
 .property-text h4 {
     margin: 0;
     padding: 0;
@@ -150,9 +153,7 @@ div.property-text {
 .property-card .property-rating {
     background-color: var(--clr-beige-bg);
     border-radius: var(--rad-sml);
-    padding-inline: 0.5rem;
-    padding-top: 0.1rem;
-    padding-bottom: 0.1rem;
+    padding: 0.2rem 0.3rem;
     position: absolute;
     top: 1rem;
     left: 1rem;
@@ -177,7 +178,6 @@ div.property-text {
     background-image: url(../icons/comment-icon.svg);
     background-repeat: no-repeat;
     background-position: center;
-    
 }
 
 .comment-icon.no-comment {
