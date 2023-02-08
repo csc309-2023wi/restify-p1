@@ -80,6 +80,11 @@ h4 {
     font-weight: 700;
 }
 
+h5 {
+    font-size: var(--font-size-h5);
+    font-weight: 700;
+}
+
 p {
     line-height: 1.5rem;
     margin-bottom: 1rem;

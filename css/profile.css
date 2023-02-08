@@ -1,0 +1,89 @@
+.bod{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    left: 0px;
+    top: 12%;
+    height: 80%;
+    background: var(--clr-purple-bg);
+    /* text-align: center; */
+}
+.hello{
+    position: absolute;
+    top: calc(9% + 11vh);
+}
+.save{
+    position: absolute;
+    bottom: 2%;
+    width: 16%;
+    /* width: 40%; */
+    /* width: 40%; */
+}
+.avatar{
+    position: absolute;
+    top: 2%;
+    width: 11vh;
+    height: 11vh;
+    border-radius: 50%;
+}
+.change-avatar{
+    color: var(--clr-purple-primary);
+    margin-top: 2px;
+    position: absolute;
+    top: calc(2.75% + 11vh);
+}
+.icon{
+    margin-left: 2px;
+    margin-bottom: -2px;
+    width: 20px;
+}
+.icon2{
+    margin-top: 2px;
+    width: 16px;
+}
+form {
+    height: 55%;
+    top: calc(17% + 11vh);
+    /* width: 18%; */
+    width: 16%;
+    position: absolute;
+    display: grid;
+    grid-template-columns: none;
+    padding: 0px;
+    gap: 2px;
+  }
+input {
+    height: 30px;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+@media only screen and (max-width: 450px) {
+    /* For mobile phones and tablets: */
+    form {
+        width: 40%;
+    }
+    .save {
+        width: 40%;
+    }
+}
+@media only screen and (min-width:500px) and (max-width:900px) {
+    /* For mobile phones and tablets: */
+    form {
+        width: 30%;
+        font-size: 17px;
+    }
+    .save {
+        width: 30%;
+    }
+    form input {
+        font-size: 17px;
+    }
+    .icon2{
+        width: 17px;
+    }
+}

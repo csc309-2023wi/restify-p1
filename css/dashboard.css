@@ -1,0 +1,84 @@
+.bod{
+    position: relative;
+    width: 100%;
+    /* height: 696px; */
+    left: 0px;
+    top: 12%;
+    height: 80%;
+    /* top: 85px; */
+    background: white;
+}
+.section_tag{
+    position: absolute;
+    height: 17px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #007D7E;    
+}
+.user_tag{
+    left: 10px;
+    top: 10px;
+}
+.host_tag{
+    position: absolute;
+    height: 17px;
+    left: 10px;
+    top: calc(50% + 10px);
+}
+hr{
+    position: absolute;
+    width: calc(100% - 24px);
+    left: 12px;
+    /* top: 360px; */
+    top: 50%;
+    border: 1px solid #B3E7E8;
+    transform: rotate(-0.08deg);
+}
+.reservations_tag{
+    position: absolute;
+    left: 15px;
+    top: 30px;
+}
+
+.listings_tag{
+    position: absolute;
+    left: 15px;
+    top: calc(50% + 30px);
+}
+.add_prop_tag{
+    position: absolute;
+    font-size: 14px;
+    right: 1.5%;
+    bottom: calc(50% - 54px);
+}
+.icon{
+    width: 10px;
+}
+.icon1{
+    width: 14px;
+}
+.icon2{
+    width: 11px;
+    margin-bottom: -1px;
+}
+@media only screen and (max-width: 450px) {
+    /* For mobile phones: */
+    .reservations_tag, .listings_tag{
+        font-size: var(--font-size-sml);
+    }
+
+    .add_prop_tag{
+        bottom: calc(50% - 46px);
+        font-size: calc(var(--font-size-sml) - 2px);
+    }
+    .section_tag{
+        font-size: calc(var(--font-size-sml) - 2px);
+    }
+    .icon2, .icon{
+        width: 8px;
+    }
+    .icon1{
+        width: 10px;
+    }
+  }
