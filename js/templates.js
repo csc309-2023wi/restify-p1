@@ -2,6 +2,7 @@
 const templateChildrenUrls = {
     navContent: "templates/navbar.html",
     footerContent: "templates/footer.html",
+    propertyCardGeneric: "templates/card_property_listing_generic.html",
 };
 
 /* Use Mustache.js to render common templates */
