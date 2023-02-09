@@ -8,11 +8,11 @@ main{
     width: 100%;
     left: 0px;
     height: calc(100% - 123.5px);
-    background: var(--clr-purple-bg);
+    /* background: var(--clr-purple-bg); */
 }
 .hello{
     position: absolute;
-    top: calc(9% + 11vh);
+    top: calc(7% + 11vh);
 }
 .save{
     position: absolute;
@@ -21,16 +21,15 @@ main{
 }
 .avatar-a{
     position: absolute;
-    top: 2%;
+    top: 0%;
     width: 11vh;
     height: 11vh;
     border-radius: 50%;
 }
 .change-avatar{
     color: var(--clr-purple-primary);
-    margin-top: 2px;
     position: absolute;
-    top: calc(2.75% + 11vh);
+    top: calc(0.75% + 11vh);
 }
 .icon{
     margin-left: 2px;
@@ -42,25 +41,38 @@ main{
     width: 16px;
 }
 form {
-    height: 55%;
-    top: calc(17% + 9.5vh);
+    height: calc(91% - 63.5px - 11vh);
+    /* height: 55%; */
+    /* top: calc(15% + 11vh); */
+    top: calc(7% + 11vh + 27.5px);
     width: 16%;
     position: absolute;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     grid-template-columns: none;
     padding: 0px;
-    gap: 1.5px;
+    /* gap: 1.5px; */
   }
+label {
+    margin-bottom: 1.5px;
+}
 input {
-    height: 30px;
+    border: 1.5px solid #CDCDCD;
+    height: 35px;
 }
 .left{
+    margin-left: 8px;
     float: left;
 }
 .right{
+    margin-right: 8px;
     float: right;
 }
-@media only screen and (max-width: 450px) {
+br{
+    margin-bottom: 1.5px;;   
+}
+@media only screen and (max-width: 550px) {
     /* For mobile phones and tablets: */
     form {
         width: 40%;
@@ -69,7 +81,7 @@ input {
         width: 40%;
     }
 }
-@media only screen and (min-width:500px) and (max-width:900px) {
+@media only screen and (min-width:550px) and (max-width:950px) {
     /* For mobile phones and tablets: */
     form {
         width: 30%;
@@ -83,5 +95,38 @@ input {
     }
     .icon2{
         width: 17px;
+    }
+}
+
+@media only screen and (max-height:750px) {
+    .bod {
+        height: calc(100% - 115.5px);
+        margin-top: -8px;
+    }
+    h3 {
+        font-size: var(--font-size-reg);
+    }
+    form input {
+        height: 20px;
+    }
+    input[type="text"], input[type="password"] {
+        font-size: 10px;
+        padding: 10px;
+    }
+    label {
+        font-size: var(--font-size-sml);
+    }
+    .save {
+        height: 30px;
+    }
+    form{
+        top: calc(7% + 11vh + 20px);
+        height: calc(91% - 11vh - 50px);
+    }
+}
+
+@media only screen and (min-height:1000px) {
+    form input {
+        height: 40px;
     }
 }
