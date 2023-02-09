@@ -1,13 +1,14 @@
+main{
+    background-color: var(--clr-purple-bg);
+}
 .bod{
     display: flex;
     justify-content: center;
     position: relative;
     width: 100%;
     left: 0px;
-    top: 12%;
-    height: 80%;
+    height: calc(100% - 123.5px);
     background: var(--clr-purple-bg);
-    /* text-align: center; */
 }
 .hello{
     position: absolute;
@@ -15,12 +16,10 @@
 }
 .save{
     position: absolute;
-    bottom: 2%;
+    bottom: 1.5%;
     width: 16%;
-    /* width: 40%; */
-    /* width: 40%; */
 }
-.avatar{
+.avatar-a{
     position: absolute;
     top: 2%;
     width: 11vh;
@@ -44,14 +43,13 @@
 }
 form {
     height: 55%;
-    top: calc(17% + 11vh);
-    /* width: 18%; */
+    top: calc(17% + 9.5vh);
     width: 16%;
     position: absolute;
     display: grid;
     grid-template-columns: none;
     padding: 0px;
-    gap: 2px;
+    gap: 1.5px;
   }
 input {
     height: 30px;
@@ -75,7 +73,7 @@ input {
     /* For mobile phones and tablets: */
     form {
         width: 30%;
-        font-size: 17px;
+        font-size: 20px;
     }
     .save {
         width: 30%;

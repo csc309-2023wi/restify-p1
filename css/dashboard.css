@@ -1,12 +1,12 @@
 .bod{
     position: relative;
     width: 100%;
-    /* height: 696px; */
     left: 0px;
-    top: 12%;
-    height: 80%;
-    /* top: 85px; */
-    background: white;
+    height: calc(100% - 123.5px);
+}
+main{
+    width: 100%;
+    height: 100%;
 }
 .section_tag{
     position: absolute;
@@ -18,13 +18,13 @@
 }
 .user_tag{
     left: 10px;
-    top: 10px;
+    top: 0px;
 }
 .host_tag{
     position: absolute;
     height: 17px;
     left: 10px;
-    top: calc(50% + 10px);
+    top: calc(50% + 5px);
 }
 hr{
     position: absolute;
@@ -33,18 +33,17 @@ hr{
     /* top: 360px; */
     top: 50%;
     border: 1px solid #B3E7E8;
-    transform: rotate(-0.08deg);
 }
 .reservations_tag{
     position: absolute;
     left: 15px;
-    top: 30px;
+    top: 20px;
 }
 
 .listings_tag{
     position: absolute;
     left: 15px;
-    top: calc(50% + 30px);
+    top: calc(50% + 25px);
 }
 .add_prop_tag{
     position: absolute;
@@ -62,23 +61,160 @@ hr{
     width: 11px;
     margin-bottom: -1px;
 }
-@media only screen and (max-width: 450px) {
+.cards{
+justify-content: space-around;
+top: 0px;
+width: 100%;
+/* height: 33%; */
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+/* padding: 1rem; */
+padding-top: 0.5rem;
+font-size: var(--font-size-sml);
+}
+div.property-text {
+width: 100%;
+height: 20%;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: space-between;
+padding: 0.5rem;
+font-size: var(--font-size-sml);
+}
+  div.property-card {
+    box-shadow: var(--shadow-sml);
+    border-radius: var(--rad-med);
+    border: 1px var(--clr-gray-light) solid;
+    background-color: white;
+    top: 42px;
+    width: 17%;
+    height: 14.5rem;
+    position: relative;
+    transition: transform var(--tns-hov-quick), box-shadow var(--tns-hov-quick);
+}
+img.property-img {
+    border-radius: var(--rad-med);
+    width: 100%;
+    height: 55%;
+    position: relative;
+}
+
+.property-text p,
+.property-text h4 {
+    margin: 0;
+    padding: 0;
+    line-height: 1rem;
+    font-size: var(--font-size-tny);
+}
+h4.price {
+    padding-left: 0.5rem;
+    color: var(--clr-purple-primary);
+    font-size: var(--font-size-reg);
+}
+.status{
+    position: absolute;
+    bottom: -20px;
+    padding: 0.5rem;
+    font-size: var(--font-size-sml);
+    display: none;
+    color: rgb(0, 0, 0);}
+
+.active{
+    display: unset;
+}
+.cards1{
+    position: absolute;
+    top: calc(50% + 6px);
+  }
+.tablet {
+    display: none;
+}
+.laptop{
+    width: 100%;
+}
+.mobile{
+    display: none;
+}
+.mb-icon-r{
+    position: absolute;
+    top: 25%;
+    right: 15px;
+    width: 20px;
+}
+.mb-icon-l{
+    position: absolute;
+    top: 25%;
+    left: 15px;
+    width: 20px;
+}
+.mb-icon-r2{
+    position: absolute;
+    top: 65%;
+    right: 15px;
+    width: 20px;
+}
+.mb-icon-l2{
+    position: absolute;
+    top: 65%;
+    left: 15px;
+    width: 20px;
+}
+
+  @media only screen and (max-width: 450px) {
     /* For mobile phones: */
-    .reservations_tag, .listings_tag{
+    .laptop{
+        display: none;
+    }
+    .mobile{
+        display: flex;
+    }
+    img.property-img {
+        border-radius: var(--rad-med);
+        width: 100%;
+        height: 55%;
+        position: relative;
+    }
+    div.property-card {
+        top:45px;
+        width: 75%;
+        height: 240px;
+    }
+    h4.price {
+        text-align: left;
+        margin-bottom: 30px;
+    }
+    .property-text p,
+    .property-text h4 {
+        font-size: 0.70rem;
+    }
+    .add_prop_tag{
+        bottom: calc(50% - 54px);
+    }
+  }
+  @media only screen and (min-width:500px) and (max-width:900px) {
+        /* For mobile phones and tablets: */
+    .laptop{
+        display: none;
+    }
+    .tablet{
+        display: flex;
+    }
+    div.property-card {
+        top:75px;
+        width: 30%;
+        height: 40%;
+    }
+    h4.price {
+        text-align: left;
+        margin-bottom: 30px;
+    }
+    .property-text p,
+    .property-text h4 {
         font-size: var(--font-size-sml);
     }
-
     .add_prop_tag{
-        bottom: calc(50% - 46px);
-        font-size: calc(var(--font-size-sml) - 2px);
-    }
-    .section_tag{
-        font-size: calc(var(--font-size-sml) - 2px);
-    }
-    .icon2, .icon{
-        width: 8px;
-    }
-    .icon1{
-        width: 10px;
+        bottom: calc(50% - 84px);
     }
   }

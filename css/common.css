@@ -47,6 +47,7 @@
 
     /* || Transitions */
     --tns-hov-quick: ease-in-out 0.1s;
+
 }
 
 html {
@@ -85,11 +86,6 @@ h3 {
 
 h4 {
     font-size: var(--font-size-h4);
-    font-weight: 700;
-}
-
-h5 {
-    font-size: var(--font-size-h5);
     font-weight: 700;
 }
 
@@ -138,7 +134,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
+    padding: 0.8rem;
     clear: both;
 }
 
