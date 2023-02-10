@@ -47,7 +47,6 @@
 
     /* || Transitions */
     --tns-hov-quick: ease-in-out 0.1s;
-
 }
 
 html {
@@ -134,7 +133,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0.8rem;
+    padding: 2rem;
     clear: both;
 }
 
