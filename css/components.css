@@ -98,6 +98,7 @@ aside.sidebar::after {
 /* Property Cards (Generic) */
 
 div.property-card {
+    flex-shrink: 0;
     box-shadow: var(--shadow-sml);
     border-radius: var(--rad-med);
     border: 1px var(--clr-gray-light) solid;
