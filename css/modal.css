@@ -65,6 +65,7 @@ aside.modal-action {
     border-top-left-radius: inherit;
     border-bottom-left-radius: inherit;
     box-shadow: var(--shadow-med-left);
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -77,6 +78,15 @@ aside.modal-action {
     aside.modal-action {
         margin-left: 0;
     }
+}
+
+aside.modal-action button.btn-modal-close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    z-index: 5;
+    padding: 0.5rem;
+    border-radius: 50%;
 }
 
 aside.modal-action .modal-header {
