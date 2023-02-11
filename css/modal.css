@@ -1,0 +1,181 @@
+/* Common Modal Components*/
+
+.modal-container {
+    width: 100%;
+    height: 80vh;
+    max-width: 58rem;
+    border-radius: var(--rad-med);
+    background-color: var(--clr-gray-mid-dark);
+    display: flex;
+    overflow-y: auto;
+
+    /* margin-left: 20%;
+    margin-bottom: 5%; */
+}
+
+.modal-content {
+    width: 66%;
+}
+
+.modal-content .content-item {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.content-item h3 {
+    color: var(--clr-purple-primary);
+}
+
+.modal-action {
+    height: 100%;
+    width: 35%;
+    min-width: fit-content;
+    /* max-width: max-content; */
+    background-color: white;
+    border-radius: var(--rad-med);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    border: 2px solid var(--clr-gray-mid-dark);
+}
+
+.modal-action .item-container {
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.modal-header {
+    width: 100%;
+    height: 6.5rem;
+    background-color: var(--clr-purple-primary);
+    border-radius: var(--rad-med) var(--rad-med) 0 0;
+    padding-left: 2rem;
+    color: white;
+    font-size: var(--font-size-h3);
+    text-align: left;
+    line-height: 6.5rem;
+}
+
+
+
+/* Property Creation Modal */
+
+.modal-action .input-container {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem 1.5rem 0 2rem;
+}
+
+input {
+    height: 40px;
+    width: 260px;
+}
+
+.modal-content .image-selector {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: max-content;
+    justify-items: center;
+    gap: 1.5rem;
+    padding: 4.5rem 4.5rem 3.5rem 3.5rem;
+    overflow: auto;
+    
+}
+
+.image-selector img {
+    width: 14rem;
+    height: 8.5rem;
+    /* min-height: 212px;
+    min-width: 300px; */
+}
+
+@media screen and (max-width: 860px) {
+    .modal-content .image-selector {
+        grid-template-columns: 1fr;
+    }  
+    .image-selector img  {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .modal-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        overflow: auto;
+        width: min-content;
+    }
+    .modal-action {   
+        height: fit-content;
+    }
+    .modal-content {
+        width: 80%;
+        height: fit-content;
+
+    }
+    .modal-content .image-selector {
+        height: fit-content;
+        overflow: visible ;
+        padding: 1.5rem;
+    }
+}
+
+/* Existing Property Host Modal */
+
+.modal-action .request-card {
+    height: 6.8rem;
+    border: 2px solid var(--clr-gray-light);
+    border-radius: var(--rad-med);
+    margin-inline: 2rem;
+}
+
+.request-card-content {
+    display: flex;
+    align-items: center;
+}
+
+.request-card-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.rating-container {
+    display: flex;
+}
+
+.request-card .btn-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.request-card .action-btn{
+    color: var(--clr-gray-mid-dark);
+}
+
+.request-card .user-name {
+    font-size: var(--font-size-reg);
+}
+
+img.profile-img {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 3rem;
+    margin: 0.5rem 1rem 0.5rem 1rem ;
+    margin-left: 1rem;
+}
+
+.request-container {
+    display: flex;
+}
+
+details.request-card-reviews {
+    width: 80%;
+    height: 6.8rem;
+    border: 2px solid var(--clr-gray-light);
+    border-radius: var(--rad-med);
+    margin: 2rem;
+
+}
