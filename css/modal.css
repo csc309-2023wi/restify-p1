@@ -84,7 +84,8 @@ aside.modal-action {
     }
 }
 
-aside.modal-action button.btn-modal-close {
+aside.modal-action button.btn-modal-close,
+button.del-img {
     position: absolute;
     top: 0.5rem;
     right: 0.5rem;
@@ -136,7 +137,7 @@ section.modal-content .image-selector {
     overflow: auto;
 }
 
-.image-selector img {
+.image-selector img.property-img {
     width: 14rem;
     height: 8.5rem;
 }
@@ -149,6 +150,10 @@ button.send-arrow {
     padding: 0.5rem;
     border-radius: 1.5rem;
 }
+
+.input-container .availability-item input {
+    width: 100%;
+} 
 
 @media screen and (max-width: 860px) {
     .modal-content .image-selector {
@@ -312,7 +317,7 @@ span.price {
     color: var(--clr-purple-primary);
 }
 
-.comment-info .reply-input-container {
+.reply-input-container {
     display: flex;
 }
 
@@ -420,4 +425,13 @@ div.amenity-container {
 .availability-item p {
     margin: 0;
     font-weight: 700;
+}
+
+button.del-img {
+    position: absolute;
+    top: -1.7rem;
+    right: -0.5rem;
+    z-index: 5;
+    padding: 0.5rem;
+    border-radius: 50%;
 }
