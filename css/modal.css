@@ -1,0 +1,227 @@
+/* Common Modal Components*/
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-container {
+    width: fit-content;
+    max-width: 58rem;
+    height: 80vh;
+    overflow-y: auto;
+    border-radius: var(--rad-med);
+    background-color: white;
+    box-shadow: var(--shadow-lrg);
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row;
+    z-index: 3;
+}
+
+section.modal-content {
+    flex: 2 0;
+    min-width: 24rem;
+    height: inherit;
+    margin-right: -2rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+section.modal-content .image-section {
+    flex-grow: 1;
+    background-color: var(--clr-gray-mid-dark);
+    padding-right: 4rem;
+}
+
+section.modal-content .info-section {
+    padding-right: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.info-section article.property-info {
+    margin: 1rem 2rem;
+}
+
+aside.modal-action {
+    flex: 1 0;
+    min-width: 16rem;
+    margin-left: -2rem;
+    height: inherit;
+    background-color: white;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+    box-shadow: var(--shadow-med-left);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: stretch;
+    overflow: hidden;
+    z-index: 4;
+}
+@media screen and (max-width: 40rem) {
+    /* remove the overlapping when in narrow screen */
+    aside.modal-action {
+        margin-left: 0;
+    }
+}
+
+aside.modal-action button.btn-modal-close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    z-index: 5;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+aside.modal-action .modal-header {
+    width: 100%;
+    min-height: 6.5rem;
+    padding: 1rem 2rem;
+    background-color: var(--clr-purple-primary);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-evenly;
+}
+.modal-header h3 {
+    font-weight: 500;
+}
+
+aside.modal-action .item-container {
+    overflow-y: auto;
+    padding: 1rem 0 2rem 0;
+}
+
+/* Host: Property Creation Modal */
+
+aside.modal-action .input-container {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem 1.5rem 0 2rem;
+}
+
+input {
+    height: 40px;
+    width: 260px;
+}
+
+section.modal-content .image-selector {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: max-content;
+    justify-items: center;
+    gap: 1.5rem;
+    padding: 4.5rem 3.5rem;
+    overflow: auto;
+}
+
+.image-selector img {
+    width: 14rem;
+    height: 8.5rem;
+    /* min-height: 212px;
+    min-width: 300px; */
+}
+
+@media screen and (max-width: 860px) {
+    .modal-content .image-selector {
+        grid-template-columns: 1fr;
+    }
+    .image-selector img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    /* .modal-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        overflow: auto;
+        width: min-content;
+    } */
+    /* .modal-action {
+        height: fit-content;
+    }
+    .modal-content {
+        width: 80%;
+        height: fit-content;
+    } */
+    .modal-content .image-selector {
+        height: fit-content;
+        overflow: visible;
+        padding: 1.5rem;
+    }
+}
+
+/* Host: Existing Property Modal */
+
+.modal-action .request-card {
+    height: 6.8rem;
+    border: 2px solid var(--clr-gray-light);
+    border-radius: var(--rad-med);
+    margin-inline: 2rem;
+}
+
+.request-card-content {
+    display: flex;
+    align-items: center;
+}
+
+.request-card-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.rating-container {
+    display: flex;
+}
+
+.request-card .btn-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.request-card .action-btn {
+    color: var(--clr-gray-mid-dark);
+}
+
+.request-card .user-name {
+    font-size: var(--font-size-reg);
+}
+
+img.profile-img {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 3rem;
+    margin: 0.5rem 1rem 0.5rem 1rem;
+    margin-left: 1rem;
+}
+
+.request-container {
+    display: flex;
+}
+
+details.request-card-reviews {
+    width: 80%;
+    height: 6.8rem;
+    border: 2px solid var(--clr-gray-light);
+    border-radius: var(--rad-med);
+    margin: 2rem;
+}
