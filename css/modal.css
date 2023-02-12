@@ -77,6 +77,9 @@ aside.modal-action {
     overflow: hidden;
     z-index: 4;
 }
+aside.modal-action.with-action-widget {
+    overflow: hidden auto;
+}
 @media screen and (max-width: 40rem) {
     section.modal-content {
         height: auto;
@@ -105,6 +108,7 @@ aside.modal-action button.btn-modal-close {
 }
 
 aside.modal-action .modal-header {
+    flex-shrink: 0;
     width: 100%;
     min-height: 6.5rem;
     padding: 2rem;
@@ -115,10 +119,19 @@ aside.modal-action .modal-header {
     flex-direction: column;
     align-items: stretch;
     justify-content: space-evenly;
+    /* clear: both; */
+}
+aside.modal-action.with-action-widget .modal-header {
+    padding-bottom: 8rem;
 }
 
-aside.modal-action .modal-header.action-widget-parent {
-    padding-bottom: 8rem;
+aside.modal-action .item-container {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1rem 0 2rem 0;
+}
+aside.modal-action.with-action-widget .item-container {
+    overflow-y: visible;
 }
 
 div.action-widget {
@@ -133,17 +146,33 @@ div.action-widget {
     align-items: stretch;
     justify-content: flex-start;
     row-gap: 0.5rem;
-    position: absolute;
-    top: calc(100% - 6rem);
+    position: relative;
+    top: -7rem;
+    margin-bottom: -7rem;
     left: 50%;
     transform: translateX(-50%);
     z-index: 5;
 }
 
-aside.modal-action .item-container {
-    flex: 1;
-    overflow-y: auto;
-    padding: 1rem 0 2rem 0;
+div.action-widget * {
+    max-width: 100%;
+}
+
+div.action-widget h3 {
+    padding-bottom: 0.5rem;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 0.5rem;
+}
+
+div.action-widget h4 {
+    margin-top: 0.5rem;
+}
+
+aside.modal-action article.action-details {
+    margin: 2rem 1rem;
 }
 
 /* Host: Property Creation Modal */
