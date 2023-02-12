@@ -425,8 +425,6 @@ div.notif-strip p.notif-preview {
 input[type="text"],
 input[type="password"] {
     font-size: inherit;
-    width: 100%;
-    display: inline-block;
     padding: 0.5rem 1rem;
     border-radius: 2rem;
 }
@@ -437,9 +435,9 @@ input[type="text"].search {
     box-sizing: border-box;
     border: 2px solid white;
     background-color: var(--clr-purple-primary);
-    background-image: url("../images/search.png");
-    background-position: 105% 50%;
-    background-size: 31% 200%;
+    background-image: url("../icons/search.svg");
+    background-position: 110% 50%;
+    background-size: 30% 150%;
     background-repeat: no-repeat;
 }
 
@@ -447,15 +445,71 @@ input[type="text"].search {
     color: white;
 }
 
-/* || Input Fields */
+input[type="text"].rounded-r {
+    position: relative;
+    font-size: 14.5px;
+    border: 2px solid black;
+    background-color: transparent;
+    padding-left: 1rem;
+    border-radius: 0%;
+    border-left: none;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    height: 33px;
+}
 
-input[type="text"],
-input[type="password"] {
-    font-size: inherit;
-    width: 100%;
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    border-radius: 2rem;
+input[type="text"].rounded-l {
+    position: relative;
+    font-size: 14.5px;
+    border: 2px solid black;
+    background-color: transparent;
+    padding-left: 22.5%;
+    border-radius: 0%;
+    width: auto;
+    border-left: none;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    height: 33px;
+}
+
+input[type="text"].dashed-l {
+    width: auto;
+    position: relative;
+    font-size: 14.5px;
+    border: 2px dashed black;
+    background-color: transparent;
+    padding-left: 22.5%;
+    border-radius: 0%;
+    border-right: none;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    height: 33px;
+}
+
+input[type="text"].flat {
+    position: relative;
+    font-size: 14.5px;
+    border: 2px solid black;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    width: 75%;
+    border-radius: 0%;
+    padding-left: 10px;
+    height: 33px;
+}
+.flat::placeholder{
+    color: black;
+}
+
+input[type="text"].comments {
+    position: relative;
+    font-size: 14.5px;
+    border: 1.5px solid black;
+    background-color: transparent;
+    border-radius: 10px;
+    padding-left: 10px;
+    height: 33px;
 }
 
 input[type="text"].search {
@@ -464,81 +518,143 @@ input[type="text"].search {
     box-sizing: border-box;
     border: 2px solid white;
     background-color: var(--clr-purple-primary);
-    background-image: url("../images/search.png");
-    background-position: 105% 50%;
-    background-size: 31% 200%;
+    background-image: url("../icons/search.svg");
+    background-position: 110% 50%;
+    background-size: 30% 150%;
     background-repeat: no-repeat;
 }
 
-.search::placeholder {
-    color: white;
-}
 
-/* || Input Fields */
-
-input[type="text"],
-input[type="password"] {
-    font-size: inherit;
+.filter-inputs {
+    display: flex;
     width: 100%;
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    border-radius: 2rem;
 }
 
-input[type="text"].search {
-    color: white;
-    width: 300px;
-    box-sizing: border-box;
-    border: 2px solid white;
-    background-color: var(--clr-purple-primary);
-    background-image: url("../images/search.png");
-    background-position: 105% 50%;
-    background-size: 31% 200%;
+button.btn-map {
+    height: 33px;
+    background-image: url('../icons/map-pin.svg');
     background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 45px;
+    background-color: black;
+	border-bottom-left-radius: 15px;
+	border-top-left-radius: 15px;
+	border: none;
 }
 
-.search::placeholder {
+button.btn-decrement {
+    width: 33px;
+    height: 33px;
+    background-image: url('../icons/minus.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: black;
+	border-bottom-left-radius: 50%;
+	border-top-left-radius: 50%;
+	border: none;
+}
+button.btn-increment {
+    width: 33px;
+    background-image: url('../icons/plus.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 33px;
+    background-color: black;
+	border-bottom-right-radius: 50%;
+	border-top-right-radius: 50%;
+	border: none;
+}
+button.btn-left {
+    font-size: 10px;
+    text-align: center;
     color: white;
+    height: 33px;
+    width: 45px;
+    background-color: black;
+	border-bottom-left-radius: 15px;
+	border-top-left-radius: 15px;
+	border: none;
+}
+button.btn-right {
+    font-size: 10px;
+    text-align: center;
+    color: white;
+    height: 33px;
+    width: 45px;
+    background-color: transparent;
+    border: 2.1px solid rgb(0, 0, 0);
+	border-bottom-right-radius: 15px;
+	border-top-right-radius: 15px;
+    border-left: none;
 }
 
-/* || Input Fields */
+button.btn-amenities {
+    font-size: var(--font-size-sml);
+    text-align: center;
+    color: black;
+    width: 20px;
+    height: 33px;
+    background-color: transparent;
+	border-radius: 20%/50%;
+	border: 2px solid rgb(0, 0, 0);
+}
 
-input[type="text"],
-input[type="password"] {
-    font-size: inherit;
+button.btn-price {
+    background-image: url('../icons/dollar-sign.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 45px;
+    height: 33px;
+    background-color: black;
+	border-bottom-left-radius: 15px;
+	border-top-left-radius: 15px;
+	border: none;
+}
+
+button.btn-amenities.selected {
+    color: white;
+    background-color: black;
+    background-image: url('../icons/tick-selected.svg');
+    background-repeat: no-repeat;
+    background-position: 140% 55%;
+    justify-content: left;
+    padding-left: 10px;
+    background-size: 65%;
+}
+
+input[type="text"].add-image {
+    background-image: url('../icons/plus-circle-black.svg');
+    background-repeat: no-repeat;
+    background-position: 98% 50%;
+    background-size: 25%;
+    width: auto;
+    border: 1px solid black;
+    font-size: 14.5px;
+    border-radius: 0% ;
+    border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+    height: 33px;
+}
+
+button.add-image {
+    height: 25%;
+    width: 40%;
+}
+
+button.add-image div.drag-area{
+    background-color: var(--clr-gray-mid-dark);
+    font-size: var(--font-size-h3);
+    line-height: 1opx;
+    color: white;
+    border: 2px dashed #ffffff;
+    height: 100%;
     width: 100%;
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    border-radius: 2rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-input[type="text"].search {
-    color: white;
-    width: 300px;
-    box-sizing: border-box;
-    border: 2px solid white;
-    background-color: var(--clr-purple-primary);
-    background-image: url("../images/search.png");
-    background-position: 105% 50%;
-    background-size: 31% 200%;
-    background-repeat: no-repeat;
-}
 
-.search::placeholder {
-    color: white;
-}
 
-input[type=text].search {
-    color: white;
-    width: 300px;
-    box-sizing: border-box;
-    border: 2px solid white;
-    background-color: var(--clr-purple-primary);
-    background-image: url('../images/search.png');
-    background-position: 105% 50%;
-    background-size: 31% 200%;
-    background-repeat: no-repeat;
-  }
-.search::placeholder{
-    color: white;
-}
