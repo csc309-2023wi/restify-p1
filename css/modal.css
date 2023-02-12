@@ -66,7 +66,7 @@ section.modal-content .info-section {
 
 aside.modal-action {
     flex: 1 0;
-    min-width: 16rem;
+    min-width: 22rem;
     margin-left: -2rem;
     height: inherit;
     background-color: white;
@@ -84,7 +84,7 @@ aside.modal-action {
 aside.modal-action.with-action-widget {
     overflow: hidden auto;
 }
-@media screen and (max-width: 40rem) {
+@media screen and (max-width: 46rem) {
     section.modal-content {
         height: auto;
         margin-right: unset;
