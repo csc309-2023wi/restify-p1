@@ -44,6 +44,10 @@ section.modal-content .image-section {
     flex-grow: 1;
     background-color: var(--clr-gray-mid-dark);
     padding-right: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 section.modal-content .info-section {
@@ -77,6 +81,13 @@ aside.modal-action {
     /* remove the overlapping when in narrow screen */
     aside.modal-action {
         margin-left: 0;
+    }
+    section.modal-content .image-section {
+        padding-right: 2rem;
+    }
+
+    section.modal-content .info-section {
+        padding-right: 2rem;
     }
 }
 
