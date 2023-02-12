@@ -50,18 +50,3 @@ section header.section-header > button.action-btn {
     column-gap: 2rem;
     font-size: var(--font-size-sml);
 }
-
-    .add_prop_tag{
-        bottom: calc(50% - 46px);
-        font-size: calc(var(--font-size-sml) - 2px);
-    }
-    .section_tag{
-        font-size: calc(var(--font-size-sml) - 2px);
-    }
-    .icon2, .icon{
-        width: 8px;
-    }
-    .icon1{
-        width: 10px;
-    }
-  }
