@@ -180,7 +180,14 @@ aside.modal-action article.action-details {
     margin: 2rem 1rem;
 }
 
+aside.modal-action article.action-details h4 {
+    margin-bottom: 1rem;
+    color: var(--clr-purple-primary);
+}
+
 /* || Guest: Reservation Request */
+
+/* pricing table */
 
 div.action-widget table.prices {
     width: auto;
@@ -198,6 +205,49 @@ div.action-widget table.prices .price-total {
 }
 div.action-widget table.prices .price-total td {
     color: var(--clr-green-dark);
+}
+
+/* Host Info Card */
+
+div.host-info-card {
+    width: 100%;
+    box-shadow: var(--shadow-sml);
+    border-radius: var(--rad-sml);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: stretch;
+    column-gap: 1rem;
+}
+
+div.host-info-card span.avatar-container {
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 6rem;
+    width: 6rem;
+    min-height: 0;
+    min-width: 0;
+}
+
+div.host-info-card span.avatar-container img {
+    min-height: 0;
+    min-width: 0;
+}
+
+div.host-info-card ul.bio {
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    row-gap: 0.5rem;
+    padding: 0.5rem;
+}
+
+div.host-info-card ul.bio li.name {
+    font-weight: 600;
+    font-size: larger;
 }
 
 /* || Host: Property Creation Modal */
