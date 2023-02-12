@@ -112,7 +112,7 @@ button:hover {
 }
 
 a {
-    color: inherit;
+    color: var(--clr-purple-primary);
     text-decoration: inherit;
 }
 

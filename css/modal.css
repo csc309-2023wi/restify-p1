@@ -250,6 +250,11 @@ div.host-info-card ul.bio li.name {
     font-size: larger;
 }
 
+div.host-info-card ul.bio a:hover,
+div.host-info-card ul.bio a:focus {
+    border-bottom: 1.5px solid var(--clr-purple-primary);
+}
+
 /* || Host: Property Creation Modal */
 
 aside.modal-action .input-container {
