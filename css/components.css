@@ -98,6 +98,7 @@ aside.sidebar::after {
 /* Property Cards (Generic) */
 
 div.property-card {
+    flex-shrink: 0;
     box-shadow: var(--shadow-sml);
     border-radius: var(--rad-med);
     border: 1px var(--clr-gray-light) solid;
@@ -189,6 +190,7 @@ div.property-text {
 /* || Navigation Bar Styles */
 
 nav.nav-main {
+    z-index: 1;
     position: sticky;
     top: 1rem;
     left: 1rem;
@@ -248,11 +250,19 @@ span.avatar-container {
     height: 3rem;
     overflow: hidden;
     border-radius: inherit;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 span.avatar-container img.avatar {
     object-fit: cover;
     object-position: center;
+    max-width: inherit;
+    max-height: inherit;
+    height: inherit;
+    width: inherit;
+    background: inherit;
 }
 
 span.avatar-slideout {
@@ -412,4 +422,31 @@ div.notif-strip p.notif-preview {
     word-break: break-all;
     margin-bottom: 0;
     max-height: 3.5rem;
+}
+
+/* || Input Fields */
+
+input[type="text"],
+input[type="password"] {
+    font-size: inherit;
+    width: 100%;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+}
+
+input[type="text"].search {
+    color: white;
+    width: 300px;
+    box-sizing: border-box;
+    border: 2px solid white;
+    background-color: var(--clr-purple-primary);
+    background-image: url("../images/search.png");
+    background-position: 105% 50%;
+    background-size: 31% 200%;
+    background-repeat: no-repeat;
+}
+
+.search::placeholder {
+    color: white;
 }

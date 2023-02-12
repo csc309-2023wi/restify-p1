@@ -16,7 +16,61 @@
         <script type="text/html" id="mustache">
             <main>
                 {{{ navContent }}}
-                <!-- contents below nav bar -->
+
+                <div class="container">
+                    <span class="avatar-container avatar-container-profile">
+                        <img class="avatar" src="images/user-avatar-color.png" alt="Avatar" />
+                    </span>
+                    <div class="change-avatar">
+                        <a href="#">Change Avatar</a>
+                        <img class="icon" src="icons/user-plus-purple-primary.svg" alt="Change avatar" />
+                    </div>
+
+                    <h3 class="hello">Hello John Doe!</h3>
+
+                    <form>
+                        <section>
+                            <div class="label-row">
+                                <label for="Your F_Name:" class="left">First Name:</label>
+                                <img class="icon" src="icons/edit-purple-primary.svg" alt="Edit field" />
+                            </div>
+                            <input type="text" name="f_name" placeholder="John" />
+                        </section>
+
+                        <section>
+                            <div class="label-row">
+                                <label for="Your S_Name" class="left">Last Name:</label>
+                                <img class="icon" src="icons/edit-purple-primary.svg" alt="Edit field" />
+                            </div>
+                            <input type="text" name="s_name" placeholder="Doe" />
+                        </section>
+
+                        <section>
+                            <div class="label-row">
+                                <label for="Email" class="left">E-mail:</label>
+                                <img class="icon" src="icons/edit-purple-primary.svg" alt="Edit field" />
+                            </div>
+                            <input type="text" name="email" placeholder="john.does.csc309@gmail.com" />
+                        </section>
+
+                        <section>
+                            <div class="label-row">
+                                <label for="Phone Number" class="left">Phone Number:</label>
+                                <img class="icon" src="icons/edit-purple-primary.svg" alt="Edit field" />
+                            </div>
+                            <input type="text" name="phone" placeholder="416 309 0309" />
+                        </section>
+
+                        <section>
+                            <div class="label-row">
+                                <label for="Password" class="left">Password:</label>
+                                <img class="icon" src="icons/edit-purple-primary.svg" alt="Edit field" />
+                            </div>
+                            <input type="password" name="password" placeholder="**********" />
+                        </section>
+                        <button class="action-btn purple-dark" type="submit">Save</button>
+                    </form>
+                </div>
             </main>
             {{{ footerContent }}}
         </script>

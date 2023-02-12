@@ -3,13 +3,13 @@ const templateChildrenUrls = {
     navContent: "templates/navbar.html",
     footerContent: "templates/footer.html",
     propertyCardGeneric: "templates/card_property_listing_generic.html",
+    dashboardCardUser: "templates/dashboard_cards.html",
 };
 
 /* Use Mustache.js to render common templates */
 function renderTemplates() {
     // grab the template container
     const bodyTemplate = document.getElementById("mustache").innerHTML;
-
     const templateChildren = {};
     Object.keys(templateChildrenUrls).forEach((templateId) => {
         fetch(templateChildrenUrls[templateId])

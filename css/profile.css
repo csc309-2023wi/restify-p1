@@ -1,0 +1,59 @@
+main {
+    background-color: var(--clr-purple-bg);
+}
+
+div.container {
+    width: 100%;
+    margin: 3rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+span.avatar-container-profile {
+    background-color: white;
+    width: 8rem;
+    height: 8rem;
+    border-radius: var(--rad-sml) var(--rad-sml) var(--rad-sml) var(--rad-sml);
+    box-shadow: var(--shadow-sml);
+}
+
+.change-avatar {
+    width: 100%;
+    color: var(--clr-purple-primary);
+    text-decoration: underline;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.5rem;
+}
+
+.icon {
+    max-height: 1.2rem;
+}
+
+form {
+    width: 90%;
+    max-width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    row-gap: 1.5rem;
+    margin: 1rem auto;
+}
+div.label-row {
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    padding: 0 1rem;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+input {
+    border: 1.5px solid #cdcdcd;
+    height: 35px;
+}
