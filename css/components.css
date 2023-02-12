@@ -99,7 +99,6 @@ aside.sidebar::after {
 
 div.property-card {
     flex-shrink: 0;
-    flex-shrink: 0;
     box-shadow: var(--shadow-sml);
     border-radius: var(--rad-med);
     border: 1px var(--clr-gray-light) solid;
@@ -259,6 +258,11 @@ span.avatar-container {
 span.avatar-container img.avatar {
     object-fit: cover;
     object-position: center;
+    max-width: inherit;
+    max-height: inherit;
+    height: inherit;
+    width: inherit;
+    background: inherit;
 }
 
 span.avatar-slideout {
@@ -655,6 +659,3 @@ button.add-image div.drag-area{
     justify-content: center;
     flex-direction: column;
 }
-
-
-
