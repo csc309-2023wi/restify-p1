@@ -78,16 +78,20 @@ aside.modal-action {
     z-index: 4;
 }
 @media screen and (max-width: 40rem) {
-    /* remove the overlapping when in narrow screen */
-    aside.modal-action {
-        margin-left: 0;
+    section.modal-content {
+        height: auto;
+        margin-right: unset;
     }
     section.modal-content .image-section {
-        padding-right: 2rem;
+        padding-right: unset;
     }
-
     section.modal-content .info-section {
-        padding-right: 2rem;
+        padding-right: unset;
+    }
+    aside.modal-action {
+        margin-left: 0;
+        height: auto;
+        box-shadow: unset;
     }
 }
 
@@ -110,9 +114,6 @@ aside.modal-action .modal-header {
     flex-direction: column;
     align-items: stretch;
     justify-content: space-evenly;
-}
-.modal-header h3 {
-    font-weight: 500;
 }
 
 aside.modal-action .item-container {
