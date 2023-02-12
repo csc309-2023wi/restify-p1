@@ -98,6 +98,8 @@ aside.sidebar::after {
 /* Property Cards (Generic) */
 
 div.property-card {
+    flex-shrink: 0;
+    flex-shrink: 0;
     box-shadow: var(--shadow-sml);
     border-radius: var(--rad-med);
     border: 1px var(--clr-gray-light) solid;
@@ -249,6 +251,9 @@ span.avatar-container {
     height: 3rem;
     overflow: hidden;
     border-radius: inherit;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 span.avatar-container img.avatar {
@@ -414,14 +419,113 @@ div.notif-strip p.notif-preview {
     margin-bottom: 0;
     max-height: 3.5rem;
 }
+
 /* || Input Fields */
-input[type="text"], 
+
+input[type="text"],
 input[type="password"] {
-font-size: 14.5px;
-width: 100%;
-display: block;
-padding: 10px;
-border-radius: 60px;
+    font-size: inherit;
+    width: 100%;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+}
+
+input[type="text"].search {
+    color: white;
+    width: 300px;
+    box-sizing: border-box;
+    border: 2px solid white;
+    background-color: var(--clr-purple-primary);
+    background-image: url("../images/search.png");
+    background-position: 105% 50%;
+    background-size: 31% 200%;
+    background-repeat: no-repeat;
+}
+
+.search::placeholder {
+    color: white;
+}
+
+/* || Input Fields */
+
+input[type="text"],
+input[type="password"] {
+    font-size: inherit;
+    width: 100%;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+}
+
+input[type="text"].search {
+    color: white;
+    width: 300px;
+    box-sizing: border-box;
+    border: 2px solid white;
+    background-color: var(--clr-purple-primary);
+    background-image: url("../images/search.png");
+    background-position: 105% 50%;
+    background-size: 31% 200%;
+    background-repeat: no-repeat;
+}
+
+.search::placeholder {
+    color: white;
+}
+
+/* || Input Fields */
+
+input[type="text"],
+input[type="password"] {
+    font-size: inherit;
+    width: 100%;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+}
+
+input[type="text"].search {
+    color: white;
+    width: 300px;
+    box-sizing: border-box;
+    border: 2px solid white;
+    background-color: var(--clr-purple-primary);
+    background-image: url("../images/search.png");
+    background-position: 105% 50%;
+    background-size: 31% 200%;
+    background-repeat: no-repeat;
+}
+
+.search::placeholder {
+    color: white;
+}
+
+/* || Input Fields */
+
+input[type="text"],
+input[type="password"] {
+    font-size: inherit;
+    width: 100%;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+}
+
+input[type="text"].search {
+    color: white;
+    width: 300px;
+    box-sizing: border-box;
+    border: 2px solid white;
+    background-color: var(--clr-purple-primary);
+    background-image: url("../images/search.png");
+    background-position: 105% 50%;
+    background-size: 31% 200%;
+    background-repeat: no-repeat;
+}
+
+.search::placeholder {
+    color: white;
 }
 
 input[type=text].search {
