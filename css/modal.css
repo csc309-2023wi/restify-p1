@@ -418,6 +418,13 @@ div.amenity-container {
    border-radius: var(--rad-med);
    font-weight: 700;
    margin: 0 1rem 1rem 0;
+   display: flex;
+   align-items: center;
+}
+
+.amenity-tag .action-btn {
+    padding: 0;
+    margin-right: 0.5rem;
 }
 
 .availability-item {
