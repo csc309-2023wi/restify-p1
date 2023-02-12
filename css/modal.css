@@ -185,9 +185,13 @@ aside.modal-action article.action-details h4 {
     color: var(--clr-purple-primary);
 }
 
+div.action-widget button.action-btn {
+    margin-top: 1rem;
+}
+
 /* || Guest: Reservation Request */
 
-/* pricing table */
+/* Pricing Table */
 
 div.action-widget table.prices {
     width: auto;
@@ -205,6 +209,19 @@ div.action-widget table.prices .price-total {
 }
 div.action-widget table.prices .price-total td {
     color: var(--clr-green-dark);
+}
+
+/* Booked Info Widget */
+
+div.action-widget ul.booked-info {
+    width: 100%;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    row-gap: 0.5rem;
 }
 
 /* Host Info Card */

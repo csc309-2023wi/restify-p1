@@ -5,6 +5,7 @@ const templateChildrenUrls = {
     propertyCardGeneric: "templates/card_property_listing_generic.html",
     modalReference: "templates/modal_ref.html",
     modalUserUnbooked: "templates/modal_user_unbooked.html",
+    modalUserBooked: "templates/modal_user_booked.html",
     modalHostCreate: "templates/modal_host_create.html",
 };
 
