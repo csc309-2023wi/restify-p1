@@ -142,6 +142,10 @@ section.modal-content .image-selector {
     height: 8.5rem;
 }
 
+.pos-relative {
+    position: relative;
+}
+
 .modal-content h3 {
     margin-top: 2rem;
 }
@@ -427,11 +431,25 @@ div.amenity-container {
     font-weight: 700;
 }
 
-button.del-img {
+.availability-item.card {
+    border: 2px solid var(--clr-gray-light);
+    border-radius: var(--rad-med);
+    padding: 1rem 2.5rem 1rem 1rem;
+}
+
+.pos-relative button{
     position: absolute;
-    top: -1.7rem;
-    right: -0.5rem;
     z-index: 5;
     padding: 0.5rem;
     border-radius: 50%;
+}
+
+.pos-relative button.del-img {
+    top: -1.7rem;
+    right: -0.5rem;
+}
+
+.pos-relative button.del-item {
+    top: 0.1rem;
+    right: 0.1rem;
 }
