@@ -139,8 +139,6 @@ section.modal-content .image-selector {
 .image-selector img {
     width: 14rem;
     height: 8.5rem;
-    /* min-height: 212px;
-    min-width: 300px; */
 }
 
 .modal-content h3 {
@@ -151,8 +149,6 @@ button.send-arrow {
     padding: 0.5rem;
     border-radius: 1.5rem;
 }
-
-
 
 @media screen and (max-width: 860px) {
     .modal-content .image-selector {
@@ -216,7 +212,6 @@ h3.request-heading {
     align-items: center;
 }
 
-
 .request-card-info {
     display: flex;
     flex-direction: column;
@@ -250,7 +245,6 @@ h3.request-heading {
 .request-card .action-btn.gray-light {
     background-color: var(--clr-gray-light);
 }
-
 
 .request-card .user-name {
     font-size: var(--font-size-reg);
@@ -324,7 +318,6 @@ span.price {
 
 .reply-input-container textarea {
     width: 80%;
-    /* height: fit-content; */
     border-radius: var(--rad-med);
     resize: none;
     padding: 0.5rem;
@@ -385,12 +378,6 @@ summary.comments-dropdown {
     cursor: pointer;
 }
 
-
-
-/* ::marker {
-    display: none;
-} */
-
 details[open] summary.comments-dropdown::after {
     content: attr(comments-open);
 }
@@ -423,17 +410,14 @@ div.amenity-container {
    font-weight: 700;
    margin: 0 1rem 1rem 0;
 }
+
 .availability-item {
     display: flex;
     flex-direction: column;
     width: fit-content;
 }
+
 .availability-item p {
     margin: 0;
     font-weight: 700;
 }
-
-
-
-
-
