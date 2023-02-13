@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <title>Restify: Home</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- scripts -->
+        <script src="https://unpkg.com/mustache@4.2.0/mustache.min.js"></script>
+        <script src="js/templates.js"></script>
+        <!-- stylesheets -->
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/components.css" />
+        <link rel="stylesheet" href="css/modal.css" />
+        <link rel="stylesheet" href="css/index.css" />
+    </head>
+    <body id="body" onload="renderTemplates();">
+        <script type="text/html" id="mustache">
+            <main>
+                {{{ navContent }}}
+                <!-- contents below nav bar -->
+                {{{modalHostExisting}}}
+            </main>
+            {{{ footerContent }}}
+        </script>
+    </body>
+</html>

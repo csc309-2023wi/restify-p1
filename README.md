@@ -2,6 +2,20 @@
 
 An online marketplace where users can search, book, comment and rate short term lodging experiences. University of Toronto CSC309 project.
 
+## Demo Pages
+
+**Main Restify webpage:** https://restify-p1.pages.dev
+
+**Login and signup page:** https://restify-p1.pages.dev/auth.html
+
+**Property creation modal (Host):** https://restify-p1.pages.dev/modal-host-create.html
+
+**Existing property modal (Host):** https://restify-p1.pages.dev/modal-host-existing.html
+
+**Unbooked property modal (User):** https://restify-p1.pages.dev/modal-user-unbooked.html
+
+**Booked property modal (User):** https://restify-p1.pages.dev/modal-user-booked.html
+
 ## Local Development
 
 To start a simple HTTP server in the repository for development purposes, run the following Python script:
