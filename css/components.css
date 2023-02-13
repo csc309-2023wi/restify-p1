@@ -456,7 +456,6 @@ input[type="text"].search {
     color: white;
 }
 
-
 input[type="text"].rounded-r,
 input[type="number"].rounded-r {
     position: relative;
@@ -486,7 +485,6 @@ input[type="number"].rounded-l {
     height: 33px;
 }
 
-
 input[type="text"].dashed-l,
 input[type="number"].dashed-l {
     width: auto;
@@ -500,7 +498,6 @@ input[type="number"].dashed-l {
     border-bottom-left-radius: 100px;
     height: 33px;
 }
-
 
 input[type="text"].flat,
 input[type="number"].flat {
@@ -529,7 +526,7 @@ input[type="date"].flat {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 }
-.flat::placeholder{
+.flat::placeholder {
     color: black;
 }
 
@@ -555,7 +552,6 @@ input[type="text"].search {
     background-repeat: no-repeat;
 }
 
-
 .filter-inputs {
     display: flex;
     width: 100%;
@@ -574,8 +570,7 @@ button.btn-map {
 }
 
 button.btn-decrement {
-    width: 33px;
-    height: 33px;
+    width: 2.5rem;
     background-image: url("../icons/minus.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -585,7 +580,7 @@ button.btn-decrement {
     border: none;
 }
 button.btn-increment {
-    width: 33px;
+    width: 2.5rem;
     background-image: url("../icons/plus.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -596,11 +591,12 @@ button.btn-increment {
     border: none;
 }
 button.btn-left {
-    font-size: 10px;
+    font-size: 0.8rem;
     text-align: center;
     color: white;
     height: 33px;
     width: 45px;
+    padding: 1rem 1.8rem;
     background-color: var(--clr-gray-dark);
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
@@ -631,12 +627,14 @@ button.btn-amenities {
 }
 
 button.btn-price {
+    background-color: var(--clr-gray-dark);
     background-image: url("../icons/dollar-sign.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    background-size: 50%;
     width: 45px;
     height: 33px;
-    background-color: var(--clr-gray-dark);
+    padding: 1rem;
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
     border: none;
@@ -675,14 +673,20 @@ button.add-image {
 button.add-image div.drag-area {
     background-color: var(--clr-gray-mid-dark);
     font-size: var(--font-size-h3);
-    line-height: 1opx;
     color: white;
     border: 2px dashed #ffffff;
     height: 100%;
     width: 100%;
+    padding: 1rem;
     border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+button.add-image div.drag-area img {
+    height: unset;
+    margin: 1rem;
+    width: 25%;
 }

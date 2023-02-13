@@ -5,13 +5,13 @@ div.container {
     height: calc(100% - 123.5px);
     /* margin: 2rem 0; */
 }
-.sort-home-m{
+.sort-home-m {
     display: none;
 }
 
-input[type=text].search-mb {
+input[type="text"].search-mb {
     display: none;
-  }
+}
 
 /* div.nav-main {
     display: flex;
@@ -31,15 +31,15 @@ nav.nav-main {
     width: 95%;
     margin-bottom: 4px;
 }
-.flat1{
+.flat1 {
     padding-left: 22.5%;
 }
 .guests {
     width: 45%;
 }
 
-.flat.center{
-text-align: center;
+.flat.center {
+    text-align: center;
 }
 
 aside.sidebar {
@@ -49,54 +49,52 @@ aside.sidebar {
     width: 35%;
     max-height: 33rem;
 }
-.sidebar-content{
+.sidebar-content {
     height: 100%;
     padding: 0.5 rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-.amenities{
+.amenities {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.calendar{
+.calendar {
     width: 95%;
-    background-image: url('../icons/calendar.svg');
+    background-image: url("../icons/calendar.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
-.btn-increment{
+.btn-increment {
     width: 50%;
 }
-.btn-decrement{
+.btn-decrement {
     width: 50%;
 }
-.btn-amenities{
+.btn-amenities {
     flex: 0 0 30%;
     margin-bottom: 4px;
 }
-button.action-btn{
+button.action-btn {
     font-size: 16px;
-    margin-right: 1rem;
     height: auto;
     padding: 0.5rem;
-    /* width: 5rem; */
 }
 
-.price-icons{
+.price-icons {
     margin-right: 5px;
     margin-left: 5px;
     width: 35%;
 }
 
-.sort-home{
+.sort-home {
     position: sticky;
     width: 100%;
 }
 
-.scroll{
+.scroll {
     position: sticky;
     width: 100%;
     /* overflow-x: auto;
@@ -106,11 +104,11 @@ button.action-btn{
     font-size: var(--font-size-sml);
 }
 
-.property_card{
+.property_card {
     width: 30%;
 }
 
-.home-cards{
+.home-cards {
     width: 100%;
     margin-top: 1rem;
     display: flex;
@@ -121,10 +119,10 @@ button.action-btn{
 }
 @media only screen and (max-width: 610px) {
     /* For mobile phones and tablets: */
-    input[type=text].search {
+    input[type="text"].search {
         display: none;
-      }
-    input[type=text].search-mb {
+    }
+    input[type="text"].search-mb {
         display: unset;
         margin-top: 5px;
         color: white;
@@ -132,7 +130,7 @@ button.action-btn{
         box-sizing: border-box;
         border: 2px solid white;
         background-color: var(--clr-purple-primary);
-        background-image: url('../icons/search.svg');
+        background-image: url("../icons/search.svg");
         background-position: 110% 50%;
         background-size: 30% 150%;
         background-repeat: no-repeat;
@@ -140,29 +138,29 @@ button.action-btn{
     .search-mb::placeholder {
         color: white;
     }
-    aside.sidebar{
+    aside.sidebar {
         display: none;
     }
-    div.container{
+    div.container {
         height: calc(100% - 167px);
     }
-    .scroll{
+    .scroll {
         display: sticky;
         margin: 2rem;
     }
-    .sort-home-m{
+    .sort-home-m {
         position: sticky;
         display: flex;
         justify-content: space-evenly;
     }
-    .home-cards{
+    .home-cards {
         justify-content: space-evenly;
     }
-    button.action-btn{
+    button.action-btn {
         margin: 0;
-        padding-right: 1rem ;
+        padding-right: 1rem;
     }
-    .sort-home{
+    .sort-home {
         display: none;
     }
 }
