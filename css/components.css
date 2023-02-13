@@ -502,6 +502,23 @@ input[type="text"].flat {
     padding-left: 10px;
     height: 33px;
 }
+
+
+input[type="date"].flat {
+    position: relative;
+    font-size: 14.5px;
+    border: 2px solid black;
+    border-left: none;
+    background-color: transparent;
+    width: 75%;
+    border-radius: 0%;
+    padding-left: 10px;
+    height: 33px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
 .flat::placeholder{
     color: black;
 }
