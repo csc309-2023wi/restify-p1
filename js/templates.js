@@ -1,10 +1,10 @@
 /* Template Identifier to File URL Mapping */
 const templateChildrenUrls = {
     navContent: "templates/navbar.html",
+    navSearchContent: "templates/navbar_search.html",
     footerContent: "templates/footer.html",
     propertyCardGeneric: "templates/card_property_listing_generic.html",
     dashboardCardUser: "templates/dashboard_cards.html",
-    navSearchContent: "templates/navbar_index.html",
 };
 
 /* Use Mustache.js to render common templates */
