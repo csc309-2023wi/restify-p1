@@ -228,7 +228,6 @@ h3.request-heading {
     padding: 0.5rem 0;
     display: flex;
     align-items: stretch;
-    flex-direction: column;
 }
 
 .request-card-info {
@@ -244,7 +243,6 @@ h3.request-heading {
 .request-card-info p.price {
     color: var(--clr-purple-primary);
     font-weight: 700;
-    margin-left: auto;
 }
 
 .rating-container {
