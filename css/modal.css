@@ -167,9 +167,9 @@ button.action-btn.create-listing {
     border-radius: var(--rad-med);
     box-shadow: var(--shadow-sml);
     overflow: hidden;
+    z-index: 6;
 }
-button.action-btn.create-listing:hover,
-button.action-btn.create-listing:focus {
+button.action-btn.create-listing:hover {
     box-shadow: var(--shadow-med);
 }
 button.action-btn.create-listing img {
