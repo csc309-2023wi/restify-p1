@@ -14,7 +14,7 @@
 /* Action Buttons */
 button.action-btn,
 a.action-btn {
-    border-radius: var(--rad-tny);
+    border-radius: var(--rad-sml);
     padding: 0.5rem 1rem;
 }
 button.action-btn:hover,
@@ -433,6 +433,7 @@ input[type="password"] {
     font-size: inherit;
     padding: 0.5rem 1rem;
     border-radius: 2rem;
+    width: 100%;
 }
 
 input[type="text"].search {
