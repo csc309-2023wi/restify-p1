@@ -26,5 +26,5 @@ class NoCacheReloadHandler(http.server.SimpleHTTPRequestHandler):
 if __name__ == "__main__":
     with socketserver.TCPServer(("", PORT), NoCacheReloadHandler) as httpd:
         print("serving at port", PORT)
-        webbrowser.get('chrome').open_new_tab(f"http://127.0.0.1:{PORT}")
+        webbrowser.open_new_tab(f"http://127.0.0.1:{PORT}")
         httpd.serve_forever()
