@@ -209,6 +209,7 @@ nav.nav-main {
 }
 
 span.logo-combo {
+    color: white;
     display: inline-flex;
     flex-direction: row;
     align-items: center;
@@ -246,9 +247,12 @@ button.btn-avatar:focus span.avatar-slideout img {
     transform: translateY(0.2rem);
 }
 
-span.avatar-container {
+nav.nav-main span.avatar-container {
     width: 3rem;
     height: 3rem;
+}
+
+span.avatar-container {
     overflow: hidden;
     border-radius: inherit;
     display: inline-flex;
