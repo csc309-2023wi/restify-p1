@@ -4,6 +4,7 @@ const templateChildrenUrls = {
     footerContent: "templates/footer.html",
     propertyCardGeneric: "templates/card_property_listing_generic.html",
     dashboardCardUser: "templates/dashboard_cards.html",
+    navSearchContent: "templates/navbar_index.html",
 };
 
 /* Use Mustache.js to render common templates */
