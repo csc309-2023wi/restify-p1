@@ -40,6 +40,7 @@ section.modal-content {
     flex-direction: column;
     align-items: stretch;
     justify-content: flex-start;
+    z-index: 4;
 }
 
 section.modal-content .image-section {
