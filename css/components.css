@@ -427,6 +427,7 @@ div.notif-strip p.notif-preview {
 /* || Input Fields */
 
 input[type="text"],
+input[type="number"],
 input[type="password"] {
     font-size: inherit;
     padding: 0.5rem 1rem;
@@ -449,7 +450,8 @@ input[type="text"].search {
     color: white;
 }
 
-input[type="text"].rounded-r {
+input[type="text"].rounded-r,
+input[type="number"].rounded-r {
     position: relative;
     font-size: 14.5px;
     border: 2px solid var(--clr-gray-dark);
@@ -462,7 +464,8 @@ input[type="text"].rounded-r {
     height: 33px;
 }
 
-input[type="text"].rounded-l {
+input[type="text"].rounded-l,
+input[type="number"].rounded-l {
     position: relative;
     font-size: 14.5px;
     border: 2px solid var(--clr-gray-dark);
@@ -476,7 +479,8 @@ input[type="text"].rounded-l {
     height: 33px;
 }
 
-input[type="text"].dashed-l {
+input[type="text"].dashed-l,
+input[type="number"].dashed-l {
     width: auto;
     position: relative;
     font-size: 14.5px;
@@ -490,7 +494,8 @@ input[type="text"].dashed-l {
     height: 33px;
 }
 
-input[type="text"].flat {
+input[type="text"].flat,
+input[type="number"].flat {
     position: relative;
     font-size: 14.5px;
     border: 2px solid var(--clr-gray-dark);
