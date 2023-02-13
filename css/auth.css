@@ -32,7 +32,7 @@ div.sidebar{
     flex-direction: column;
     justify-content: space-evenly;
 }
-a{
+a.forgot{
     text-decoration: underline;
 }
 .red{
