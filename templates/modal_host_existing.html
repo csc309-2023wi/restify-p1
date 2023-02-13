@@ -40,6 +40,7 @@
                         voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
                         non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </textarea>
+                    
                     <h3>Amenities</h3>
                     <div class="amenity-container">
                         <div class="amenity-tag">
@@ -52,7 +53,7 @@
                             <button class="action-btn">
                                 <img src="/icons/x-dark.svg">
                             </button>
-                            Pool
+                            Air conditioning
                         </div>
                         <div class="amenity-tag">
                             <button class="action-btn">
@@ -64,25 +65,25 @@
                             <button class="action-btn">
                                 <img src="/icons/x-dark.svg">
                             </button>
+                            Washing machine
+                        </div>
+                        <div class="amenity-tag">
+                            <button class="action-btn">
+                                <img src="/icons/x-dark.svg">
+                            </button>
+                            Kitchen
+                        </div>
+                        <div class="amenity-tag">
+                            <button class="action-btn">
+                                <img src="/icons/x-dark.svg">
+                            </button>
                             Pool
                         </div>
                         <div class="amenity-tag">
                             <button class="action-btn">
                                 <img src="/icons/x-dark.svg">
                             </button>
-                            WIFI
-                        </div>
-                        <div class="amenity-tag">
-                            <button class="action-btn">
-                                <img src="/icons/x-dark.svg">
-                            </button>
-                            Pool
-                        </div>
-                        <div class="amenity-tag">
-                            <button class="action-btn">
-                                <img src="/icons/x-dark.svg">
-                            </button>
-                            WIFI
+                            Dryer
                         </div>
                         <div class="amenity-tag">
                             <button class="action-btn">
@@ -92,8 +93,9 @@
                         </div>
                         <input type="">
                     </div>
+                    
                     <h3>Availability</h3>
-                    <div>
+                    <div class="availability">
                         <ul class="content-list">
                             <li class="availability-item card pos-relative">
                                 <button class="action-btn del-item">
@@ -112,18 +114,23 @@
                                 <p>To: <span class="date">March 1, 2026</span></p>
                                 <p>Price: <span class="price">$500</span></p>
                             </li>
-
-                            <li class="availability-item">
-                                <input type="date">
-                                <input type="date">
-                                <input type="">
-                                <button class="action-btn purple-dark">Add Availability</button>
-                            </li>
-
                         </ul>
+                        <div class="add-availability">
+                            <input type="date">
+                            <input type="date">
+                            <input type="">
+                            <button class="action-btn purple-dark">Add Availability</button>
+                        </div>
                     </div>
+                    <div class="save-changes">
+                        <button class="action-btn save-changes green-dark">
+                            Save Changes
+                        </button>
+                    </div>
+                    
+
                     <h3>Comments and Ratings</h3>
-                    <ul class="content-list">
+                    <ul class="content-list content-list-comments">
                         <li>
                             <div class="comment-card main-comment has-ratings">
                                 <img class="profile-img" src="/images/user-avatar-default.png">
@@ -351,12 +358,10 @@
                             </details>
                         </li>
                     </ul>
-                    <button class="action-btn save-changes green-dark">
-                        Save Changes
-                    </button>
                 </article>
             </div>
         </section>
+        
         <aside class="modal-action">
             <button class="btn-modal-close clickable-on-dark">
                 <img src="icons/x-white.svg" alt="X" />
