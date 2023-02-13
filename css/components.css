@@ -442,7 +442,7 @@ input[type="password"] {
 
 input[type="text"].search {
     color: white;
-    width: 300px;
+    width: 20%;
     box-sizing: border-box;
     border: 2px solid white;
     background-color: var(--clr-purple-primary);
@@ -455,6 +455,7 @@ input[type="text"].search {
 .search::placeholder {
     color: white;
 }
+
 
 input[type="text"].rounded-r,
 input[type="number"].rounded-r {
@@ -469,6 +470,7 @@ input[type="number"].rounded-r {
     border-bottom-right-radius: 100px;
     height: 33px;
 }
+
 
 input[type="text"].rounded-l,
 input[type="number"].rounded-l {
@@ -485,6 +487,7 @@ input[type="number"].rounded-l {
     height: 33px;
 }
 
+
 input[type="text"].dashed-l,
 input[type="number"].dashed-l {
     width: auto;
@@ -500,6 +503,7 @@ input[type="number"].dashed-l {
     height: 33px;
 }
 
+
 input[type="text"].flat,
 input[type="number"].flat {
     position: relative;
@@ -513,8 +517,22 @@ input[type="number"].flat {
     padding-left: 10px;
     height: 33px;
 }
-.flat::placeholder {
-    color: var(--clr-gray-dark);
+
+input[type="date"].flat {
+    position: relative;
+    font-size: 14.5px;
+    border: 2px solid var(--clr-gray-dark);
+    border-left: none;
+    background-color: transparent;
+    width: 75%;
+    border-radius: 0%;
+    padding-left: 10px;
+    height: 33px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.flat::placeholder{
+    color: black;
 }
 
 input[type="text"].comments {
@@ -529,7 +547,7 @@ input[type="text"].comments {
 
 input[type="text"].search {
     color: white;
-    width: 300px;
+    width: 15rem;
     box-sizing: border-box;
     border: 2px solid white;
     background-color: var(--clr-purple-primary);
@@ -538,6 +556,7 @@ input[type="text"].search {
     background-size: 30% 150%;
     background-repeat: no-repeat;
 }
+
 
 .filter-inputs {
     display: flex;

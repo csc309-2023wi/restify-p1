@@ -26,28 +26,86 @@
         <script type="text/html" id="mustache">
             <main>
                 {{{ navSearchContent }}}  
-                <aside class="sidebar">
-                    <h3>Filter Results</h3>
-                    <div class="filter-inputs location">
-                        <button class="btn-map"></button>
-                        <input type="text" id="location" class="rounded-r">
-                    </div><br />
-                    <div class="filter-inputs guests">
-                        <button class="btn-decrement"></button>
-                        <input type="text" id="room_num" class="flat" placeholder="1">
-                        <button class="btn-increment"></button>
-                    </div><br />
-                    <div class="filter-inputs location">
-                        <button class="btn-left">FROM</button>
-                        <input type="text" id="room_num" class="flat flat1">
-                        <button class="btn-right"></button>
-                    </div><br />
-                    <div class="filter-inputs location">
-                        <button class="btn-left">TO</button>
-                        <input type="text" id="room_num" class="flat flat1">
-                        <button class="btn-right"></button>
+                <div class="container">
+                    <aside class="sidebar">
+                        <h3>Filter Results</h3>
+                        <div class="sidebar-content">
+                            <div>
+                                Location:
+                                <div class="filter-inputs default">
+                                    <button class="btn-map"></button>
+                                    <input type="text" id="location" class="rounded-r">
+                                </div>
+                            </div>
+
+                            <div>
+                                Number of Guests:
+                                <div class="filter-inputs guests">
+                                    <button class="btn-decrement"></button>
+                                    <input type="text" id="guests" class="flat center" placeholder="1">
+                                    <button class="btn-increment"></button>
+                                </div>
+                            </div>
+
+                            <div>
+                                Dates available:
+                                <div class="filter-inputs dates-from">
+                                    <button class="btn-left">FROM</button>
+                                    <input type="date" id="dates_from" class="flat flat1" placeholder="Jun. 31, 2026">
+                                </div>
+                                <div class="filter-inputs default">
+                                    <button class="btn-left">TO</button>
+                                    <input type="date" id="dates_to" class="flat flat1" placeholder="Jun. 31, 2026">
+                                </div>
+                            </div>
+
+                            <div>
+                                Amenities:
+                                <div class="filter-inputs amenities">
+                                    <button class="btn-amenities selected">WiFi</button>
+                                    <button class="btn-amenities">Kitchen</button>
+                                    <button class="btn-amenities">A/C</button>
+                                    <button class="btn-amenities">Washer</button>
+                                    <button class="btn-amenities">Dryer</button>
+                                    <button class="btn-amenities">Parking</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </aside>
+                    <div class="scroll">
+                    <div class="sort-home">
+                        <button class="action-btn purple-light">
+                            <img class="price-icons" src="./icons/black-dollar-sign.svg" alt="Price" />
+                            Price
+                            <img class="price-icons" src="./icons/arrow-down.svg" alt="Down" /></button>
+                        <button class="action-btn purple-light">
+                            <img class="price-icons" src="./icons/star.svg" alt="Rating" />
+                            Rating
+                            <img class="price-icons" src="./icons/arrow-down.svg" alt="Down" /></button>
                     </div>
-                </aside>
+                    <div class="sort-home-m">
+                        <button class="action-btn green-light">
+                            <img class="price-icons" src="./icons/filter.svg" alt="Filter" />
+                            Filter</button>
+                        <button class="action-btn purple-light">
+                            <img class="price-icons" src="./icons/sort.svg" alt="Sort" />
+                            Sort</button>
+                    </div>
+                    <div class="home-cards">
+                        {{{ propertyCardGeneric}}} {{{ propertyCardGeneric}}} {{{ propertyCardGeneric}}} {{{
+                            propertyCardGeneric}}} {{{ propertyCardGeneric}}} {{{ propertyCardGeneric}}} {{{
+                            propertyCardGeneric}}}
+                    </div>
+                    </div>
+                    <!-- </div> -->
+                    <!-- <button class="add-image">
+                        <div class="drag-area">
+                            <img src="./images/image_upload.png" alt="drag and drop image here" />
+                            <h4>Upload Image</h4>
+                        </div>
+                    </button> -->
+                </div>
                 <!-- contents below nav bar -->
             </main>
             {{{ footerContent }}}
