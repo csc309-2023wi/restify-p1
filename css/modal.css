@@ -111,7 +111,7 @@ aside.modal-action .modal-header {
 
 aside.modal-action .item-container {
     overflow-y: auto;
-    /* padding: 1rem 0 2rem 0; */
+    padding: 1rem 0 5rem 0;
 }
 
 /* Host: Property Creation Modal */
@@ -124,7 +124,6 @@ aside.modal-action .input-container {
 
 input {
     height: 40px;
-    width: 260px;
 }
 
 section.modal-content .image-selector {
@@ -159,10 +158,25 @@ button.send-arrow {
     width: 100%;
 }
 
-.action-btn.create-listing {
+button.action-btn.create-listing {
     position: absolute;
     bottom: 1rem;
     right: 1.5rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: var(--rad-med);
+    box-shadow: var(--shadow-sml);
+    overflow: hidden;
+}
+button.action-btn.create-listing:hover,
+button.action-btn.create-listing:focus {
+    box-shadow: var(--shadow-med);
+}
+button.action-btn.create-listing img {
+    width: inherit;
+    height: inherit;
+    min-width: none;
+    min-height: none;
 }
 
 @media screen and (max-width: 860px) {
@@ -445,7 +459,6 @@ div.amenity-container {
 .availability-item {
     display: flex;
     flex-direction: column;
-    width: fit-content;
 }
 
 .availability-item p {
