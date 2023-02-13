@@ -2,6 +2,7 @@
 
 /* Any element that is against a dark background that should appear clickable */
 .clickable-on-dark {
+    background: transparent;
     transition: background-color var(--tns-hov-quick);
 }
 .clickable-on-dark:hover,

@@ -4,7 +4,8 @@ const templateChildrenUrls = {
     navSearchContent: "templates/navbar_search.html",
     footerContent: "templates/footer.html",
     propertyCardGeneric: "templates/card_property_listing_generic.html",
-    dashboardCardUser: "templates/dashboard_cards.html",
+    modalHostCreate: "templates/modal_host_create.html",
+    modalHostExisting: "templates/modal_host_existing.html",
 };
 
 /* Use Mustache.js to render common templates */
