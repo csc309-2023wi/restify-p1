@@ -435,7 +435,7 @@ input[type="password"] {
 
 input[type="text"].search {
     color: white;
-    width: 300px;
+    width: 20%;
     box-sizing: border-box;
     border: 2px solid white;
     background-color: var(--clr-purple-primary);
@@ -518,7 +518,7 @@ input[type="text"].comments {
 
 input[type="text"].search {
     color: white;
-    width: 300px;
+    width: 15rem;
     box-sizing: border-box;
     border: 2px solid white;
     background-color: var(--clr-purple-primary);

@@ -1,0 +1,168 @@
+div.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: calc(100% - 123.5px);
+    /* margin: 2rem 0; */
+}
+.sort-home-m{
+    display: none;
+}
+
+input[type=text].search-mb {
+    display: none;
+  }
+
+div.nav-main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav.nav-main {
+    display: block;
+    text-align: center;
+}
+.default {
+    width: 95%;
+}
+.dates-from {
+    width: 95%;
+    margin-bottom: 4px;
+}
+.flat1{
+    padding-left: 22.5%;
+}
+.guests {
+    width: 45%;
+}
+
+.flat.center{
+text-align: center;
+}
+
+aside.sidebar {
+    padding: 1%;
+    padding-top: 1.5rem;
+    height: 70%;
+    width: 35%;
+    max-height: 33rem;
+}
+.sidebar-content{
+    height: 100%;
+    padding: 0.5 rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.amenities{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.calendar{
+    width: 95%;
+    background-image: url('../icons/calendar.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.btn-increment{
+    width: 50%;
+}
+.btn-decrement{
+    width: 50%;
+}
+.btn-amenities{
+    flex: 0 0 30%;
+    margin-bottom: 4px;
+}
+button.action-btn{
+    font-size: 16px;
+    margin-right: 1rem;
+    height: auto;
+    padding: 0.5rem;
+    /* width: 5rem; */
+}
+
+.price-icons{
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 35%;
+}
+
+.sort-home{
+    position: sticky;
+    width: 100%;
+}
+
+.scroll{
+    position: sticky;
+    width: 100%;
+    /* overflow-x: auto;
+    overflow-y: visible; */
+    margin: 2rem;
+    margin-left: 0rem;
+    font-size: var(--font-size-sml);
+}
+
+.property_card{
+    width: 30%;
+}
+
+.home-cards{
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    font-size: var(--font-size-sml);
+}
+@media only screen and (max-width: 610px) {
+    /* For mobile phones and tablets: */
+    input[type=text].search {
+        display: none;
+      }
+    input[type=text].search-mb {
+        display: unset;
+        margin-top: 5px;
+        color: white;
+        width: 15rem;
+        box-sizing: border-box;
+        border: 2px solid white;
+        background-color: var(--clr-purple-primary);
+        background-image: url('../icons/search.svg');
+        background-position: 110% 50%;
+        background-size: 30% 150%;
+        background-repeat: no-repeat;
+    }
+    .search-mb::placeholder {
+        color: white;
+    }
+    aside.sidebar{
+        display: none;
+    }
+    div.container{
+        height: calc(100% - 167px);
+    }
+    .scroll{
+        display: sticky;
+        margin: 2rem;
+    }
+    .sort-home-m{
+        position: sticky;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .home-cards{
+        justify-content: space-evenly;
+    }
+    button.action-btn{
+        margin: 0;
+        padding-right: 1rem ;
+    }
+    .sort-home{
+        display: none;
+    }
+}
