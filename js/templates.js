@@ -11,7 +11,6 @@ const templateChildrenUrls = {
 function renderTemplates() {
     // grab the template container
     const bodyTemplate = document.getElementById("mustache").innerHTML;
-
     const templateChildren = {};
     Object.keys(templateChildrenUrls).forEach((templateId) => {
         fetch(templateChildrenUrls[templateId])
