@@ -596,7 +596,7 @@ button.btn-left {
     color: white;
     height: 33px;
     width: 45px;
-    padding: 1rem 1.8rem;
+    padding: 1rem 0;
     background-color: var(--clr-gray-dark);
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;

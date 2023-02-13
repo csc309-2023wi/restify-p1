@@ -34,17 +34,12 @@ nav.nav-main {
 .flat1 {
     padding-left: 22.5%;
 }
-.guests {
-    width: 45%;
-}
 
 .flat.center {
     text-align: center;
 }
 
 aside.sidebar {
-    padding: 1%;
-    padding-top: 1.5rem;
     height: 70%;
     width: 35%;
     max-height: 33rem;
