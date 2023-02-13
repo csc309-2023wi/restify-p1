@@ -159,6 +159,12 @@ button.send-arrow {
     width: 100%;
 } 
 
+.action-btn.create-listing {
+    position: absolute;
+    bottom: 1rem;
+    right: 1.5rem;
+}
+
 @media screen and (max-width: 860px) {
     .modal-content .image-selector {
         grid-template-columns: 1fr;
@@ -459,4 +465,8 @@ div.amenity-container {
 .pos-relative button.del-item {
     top: 0.1rem;
     right: 0.1rem;
+}
+
+.modal-content .action-btn.save-changes {
+    float: right;
 }
