@@ -1,0 +1,67 @@
+div.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: calc(100% - 123.5px);
+    justify-content: space-evenly;
+}
+.signup-m{
+    display: none;
+}
+
+div.sidebar{
+    padding: 1rem;
+    height: 80%;
+    max-width: 21rem;
+    background-color: var(--clr-purple-primary);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 1rem;
+}
+.sidebar .action-btn{
+    width: 40%;
+    border: 1px solid white;
+}
+.auth-form{
+    height: 85%;
+    color: #666666;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+a{
+    text-decoration: underline;
+}
+.red{
+    color: red;
+    background-color: transparent;
+}
+input{
+    width: 100%;
+    border: 1px solid #CDCDCD;
+}
+.auth-form .action-btn{
+    margin-left: 30%;
+    width: 40%;
+    border: 1px solid var(--clr-green-dark);
+}
+input[type="text"].rounded-r{
+    height: 36.5px;
+    padding: 0.5rem 1rem;
+    border: 1px solid #CDCDCD;
+}
+
+ @media only screen and (max-width: 645px) {
+    /* For mobile phones and tablets: */
+    div.container {
+        flex-direction: column;
+        align-items: center;
+    }
+    div.sidebar{
+        width: 100%;
+    }
+
+} 
