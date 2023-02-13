@@ -258,6 +258,11 @@ span.avatar-container {
 span.avatar-container img.avatar {
     object-fit: cover;
     object-position: center;
+    max-width: inherit;
+    max-height: inherit;
+    height: inherit;
+    width: inherit;
+    background: inherit;
 }
 
 span.avatar-slideout {
@@ -654,6 +659,3 @@ button.add-image div.drag-area{
     justify-content: center;
     flex-direction: column;
 }
-
-
-
