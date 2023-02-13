@@ -25,7 +25,29 @@
     <body id="body" onload="renderTemplates();">
         <script type="text/html" id="mustache">
             <main>
-                {{{ navContent }}}
+                {{{ navSearchContent }}}  
+                <aside class="sidebar">
+                    <h3>Filter Results</h3>
+                    <div class="filter-inputs location">
+                        <button class="btn-map"></button>
+                        <input type="text" id="location" class="rounded-r">
+                    </div><br />
+                    <div class="filter-inputs guests">
+                        <button class="btn-decrement"></button>
+                        <input type="text" id="room_num" class="flat" placeholder="1">
+                        <button class="btn-increment"></button>
+                    </div><br />
+                    <div class="filter-inputs location">
+                        <button class="btn-left">FROM</button>
+                        <input type="text" id="room_num" class="flat flat1">
+                        <button class="btn-right"></button>
+                    </div><br />
+                    <div class="filter-inputs location">
+                        <button class="btn-left">TO</button>
+                        <input type="text" id="room_num" class="flat flat1">
+                        <button class="btn-right"></button>
+                    </div>
+                </aside>
                 <!-- contents below nav bar -->
             </main>
             {{{ footerContent }}}
