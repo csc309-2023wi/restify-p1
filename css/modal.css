@@ -192,16 +192,18 @@ h3.request-heading {
 
 .modal-action .request-card {
     height: fit-content;
-    width: 15rem;
+    width: 100%;
     border: 2px solid var(--clr-gray-light);
-    border-radius: var(--rad-med);
-    margin-inline: 1rem;
+    border-radius: var(--rad-sml);
     padding: 0.5rem 1rem 0.5rem 1rem;
+    box-shadow: var(--shadow-sml);
 }
 
 .request-card.host-comment {
-    margin: 0;
-    width: 13rem;
+    margin-top: 0.5rem;
+    margin-left: auto;
+    width: 80%;
+    background-color: var(--clr-gray-light);
 }
 
 .host-comment .profile-img {
@@ -209,13 +211,16 @@ h3.request-heading {
 }
 
 .request-card-content {
+    padding: 0.5rem 0;
     display: flex;
-    align-items: center;
+    align-items: stretch;
+    flex-direction: column;
 }
 
 .request-card-info {
     display: flex;
     flex-direction: column;
+    margin-bottom: 0.5rem;
 }
 
 .request-card-info p {
@@ -225,6 +230,7 @@ h3.request-heading {
 .request-card-info p.price {
     color: var(--clr-purple-primary);
     font-weight: 700;
+    margin-left: auto;
 }
 
 .rating-container {
@@ -268,7 +274,8 @@ img.profile-img {
 
 .request-container summary.comments-dropdown {
     background-color: white;
-    border: 2px solid var(--clr-gray-light);
+    /* border: 2px solid var(--clr-gray-light); */
+    box-shadow: var(--shadow-sml);
 }
 
 textarea.description-text {
@@ -288,10 +295,11 @@ details.reply-container {
     border-radius: var(--rad-med);
     display: flex;
     align-items: flex-start;
-    padding: 0 0.5rem 0.5rem 0;
+    padding: 0.5rem 0.25rem;
 }
 
 .comment-card .comment-info {
+    width: 100%;
     display: flex;
     flex-direction: column;
     height: fit-content;
@@ -318,8 +326,8 @@ span.price {
 }
 
 .reply-input-container textarea {
-    width: 80%;
-    border-radius: var(--rad-med);
+    width: 100%;
+    border-radius: var(--rad-sml);
     resize: none;
     padding: 0.5rem;
 }
@@ -365,13 +373,14 @@ li .past-guest-card {
 .past-guest-card.has-ratings,
 .request-card.has-ratings,
 .comment-card.has-ratings {
+    border: none;
     border-radius: var(--rad-med) var(--rad-med) var(--rad-med) 0;
 }
 
 summary.comments-dropdown {
     background-color: var(--clr-purple-bg);
     width: fit-content;
-    padding: 0.3rem;
+    padding: 0.5rem 1rem;
     text-align: center;
     list-style-type: none;
     border-radius: 0 0 var(--rad-med) var(--rad-med);
@@ -392,7 +401,11 @@ ul.content-list {
     overflow-y: auto;
 }
 ul.content-list.content-list-comments {
+    margin-top: 0.5rem;
     box-shadow: var(--shadow-sml);
+    border: 1px solid var(--clr-gray-light);
+    border-radius: var(--rad-med);
+    padding: 0.5rem;
 }
 
 .content-list li {
