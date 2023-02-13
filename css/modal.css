@@ -638,9 +638,12 @@ div.add-availability {
     justify-content: center;
     align-items: center;
     row-gap: 0.5rem;
+    width: min-content;
 }
 
-.availability button.action-btn {
+.availability-item button.action-btn,
+.add-availability button.action-btn {
+    margin-right: 0;
 }
 
 div.save-changes {

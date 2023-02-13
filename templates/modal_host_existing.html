@@ -23,12 +23,12 @@
                         </button>
                         <img class="propery-img" src="images/property-img.png" />
                     </div>
-                    <div class="pos-relative">
-                        <button class="del-img clickable-on-dark">
-                            <img src="/icons/x-white-small.svg"/>
-                        </button>
-                        <img class="propery-img" src="images/property-img.png" />
-                    </div>
+                    <button class="add-image">
+                        <div class="drag-area">
+                            <img src="./images/image_upload.png" alt="drag and drop image here" />
+                            <h4>Upload Image</h4>
+                        </div>
+                    </button>
                 </div>
             </div>
             
@@ -93,7 +93,10 @@
                             </button>
                             Pool
                         </div>
-                        <input type="">
+                        <div class="filter-inputs default">
+                            <input type="text" class="dashed-l" placeholder="Add Amenity">
+                            <button class="btn-increment"></button>
+                        </div>
                     </div>
                     
                     <h3>Availability</h3>
@@ -118,9 +121,18 @@
                             </li>
                         </ul>
                         <div class="add-availability">
-                            <input type="date">
-                            <input type="date">
-                            <input type="">
+                            <div class="filter-inputs dates-from">
+                                <button class="btn-left">FROM</button>
+                                <input type="date" id="dates_from" class="flat flat1" placeholder="Jun. 31, 2026">
+                            </div>
+                            <div class="filter-inputs default">
+                                <button class="btn-left">TO</button>
+                                <input type="date" id="dates_to" class="flat flat1" placeholder="Jun. 31, 2026">
+                            </div>
+                            <div class="filter-inputs default">
+                                <button class="btn-price"></button>
+                                <input type="number" class="rounded-r">
+                            </div>
                             <button class="action-btn purple-dark">Add Availability</button>
                         </div>
                     </div>
