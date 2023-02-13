@@ -471,7 +471,6 @@ input[type="number"].rounded-r {
     height: 33px;
 }
 
-
 input[type="text"].rounded-l,
 input[type="number"].rounded-l {
     position: relative;
