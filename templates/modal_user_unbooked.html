@@ -168,10 +168,20 @@
                 <div class="action-widget">
                     <h3><img src="icons/calendar-green-dark.svg" alt="Calendar" />Make Reservation</h3>
                     <h4>Duration:</h4>
-                    <input type="date" />
-                    <input type="date" />
+                    <div class="filter-inputs dates-from">
+                        <button class="btn-left">FROM</button>
+                        <input type="date" id="dates_from" class="flat flat1" placeholder="Jun. 31, 2026">
+                    </div>
+                    <div class="filter-inputs default">
+                        <button class="btn-left">TO</button>
+                        <input type="date" id="dates_to" class="flat flat1" placeholder="Jun. 31, 2026">
+                    </div>
                     <h4>Number of guests:</h4>
-                    <input type="number" />
+                    <div class="filter-inputs guests">
+                        <button class="btn-decrement"></button>
+                        <input type="text" id="guests" class="flat center" placeholder="1">
+                        <button class="btn-increment"></button>
+                    </div>
                     <table class="prices">
                         <tr>
                             <th>Subtotal</th>
