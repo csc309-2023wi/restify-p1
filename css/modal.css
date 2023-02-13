@@ -492,11 +492,6 @@ div.save-changes {
     justify-content: flex-end;
 }
 
-/* button.action-btn {
-    margin: 1rem;
-    margin-left: auto;
-} */
-
 .pos-relative button {
     position: absolute;
     z-index: 5;
