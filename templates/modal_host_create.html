@@ -1,53 +1,147 @@
-<div class="modal-container">
-    <div class="modal-content">
-        <div class="image-selector">
-            <img src="images/property-img.png">
-            <img src="images/property-img.png">
-            <img src="images/property-img.png">
-            <img src="images/property-img.png">
-        </div>
-    </div>
-    <div class="modal-action">
-        <div class="modal-header">Create new listing</div>
-        <div class="item-container">
-            <div class="input-container">
-                <h4>Address:</h4>
-                <input type="text">
+<div class="modal-backdrop">
+    <div class="modal-container">
+        <section class="modal-content">
+            <div class="image-section">
+                <div class="image-selector">
+                    <div class="pos-relative">
+                        <button class="del-img clickable-on-dark">
+                            <img src="/icons/x-white-small.svg" />
+                        </button>
+                        <img class="propery-img" src="images/property-img.png" />
+                    </div>
+                    <div class="pos-relative">
+                        <button class="del-img clickable-on-dark">
+                            <img src="/icons/x-white-small.svg" />
+                        </button>
+                        <img class="propery-img" src="images/property-img.png" />
+                    </div>
+                    <div class="pos-relative">
+                        <button class="del-img clickable-on-dark">
+                            <img src="/icons/x-white-small.svg" />
+                        </button>
+                        <img class="propery-img" src="images/property-img.png" />
+                    </div>
+                    <div class="pos-relative">
+                        <button class="del-img clickable-on-dark">
+                            <img src="/icons/x-white-small.svg" />
+                        </button>
+                        <img class="propery-img" src="images/property-img.png" />
+                    </div>
+                </div>
             </div>
-            <div class="input-container">
-                <h4>Number of quests allowed:</h4>
-                <input type="number">
+        </section>
+
+        <aside class="modal-action">
+            <button class="btn-modal-close clickable-on-dark">
+                <img src="icons/x-white.svg" alt="X" />
+            </button>
+            <button class="action-btn create-listing green-dark">
+                <img src="icons/check-white.svg" alt="+" />
+            </button>
+            <div class="modal-header"><h3>Create new listing</h3></div>
+            <div class="item-container">
+                <div class="input-container">
+                    <h4>Address:</h4>
+                    <input type="text" />
+                </div>
+
+                <div class="input-container">
+                    <h4>Number of guests allowed:</h4>
+                    <input type="number" />
+                </div>
+
+                <div class="input-container">
+                    <h4>Dates Available:</h4>
+                    <div>
+                        <ul class="content-list">
+                            <li class="availability-item card pos-relative">
+                                <button class="action-btn del-item">
+                                    <img src="/icons/x-dark.svg" />
+                                </button>
+                                <p>From: <span class="date">March 1, 2025</span></p>
+                                <p>To: <span class="date">March 1, 2026</span></p>
+                                <p>Price: <span class="price">$500</span></p>
+                            </li>
+
+                            <li class="availability-item card pos-relative">
+                                <button class="action-btn del-item">
+                                    <img src="/icons/x-dark.svg" />
+                                </button>
+                                <p>From: <span class="date">March 1, 2025</span></p>
+                                <p>To: <span class="date">March 1, 2026</span></p>
+                                <p>Price: <span class="price">$500</span></p>
+                            </li>
+
+                            <li class="availability-item">
+                                <input type="date" />
+                                <input type="date" />
+                                <input type="" />
+                                <button class="action-btn purple-dark">Add Availability</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="input-container">
+                    <h4>Amenities:</h4>
+                    <div class="amenity-container">
+                        <div class="amenity-tag">
+                            <button class="action-btn">
+                                <img src="/icons/x-dark.svg" />
+                            </button>
+                            WIFI
+                        </div>
+                        <div class="amenity-tag">
+                            <button class="action-btn">
+                                <img src="/icons/x-dark.svg" />
+                            </button>
+                            Pool
+                        </div>
+                        <div class="amenity-tag">
+                            <button class="action-btn">
+                                <img src="/icons/x-dark.svg" />
+                            </button>
+                            WIFI
+                        </div>
+                        <div class="amenity-tag">
+                            <button class="action-btn">
+                                <img src="/icons/x-dark.svg" />
+                            </button>
+                            Pool
+                        </div>
+                        <div class="amenity-tag">
+                            <button class="action-btn">
+                                <img src="/icons/x-dark.svg" />
+                            </button>
+                            Air conditioning
+                        </div>
+                        <div class="amenity-tag">
+                            <button class="action-btn">
+                                <img src="/icons/x-dark.svg" />
+                            </button>
+                            Pool
+                        </div>
+                        <div class="amenity-tag">
+                            <button class="action-btn">
+                                <img src="/icons/x-dark.svg" />
+                            </button>
+                            WIFI
+                        </div>
+                        <div class="amenity-tag">
+                            <button class="action-btn">
+                                <img src="/icons/x-dark.svg" />
+                            </button>
+                            Pool
+                        </div>
+                        <input type="" />
+                    </div>
+                </div>
+
+                <div class="input-container">
+                    <h4>Price:</h4>
+                    <input type="" />
+                </div>
             </div>
-            <div class="input-container">
-                <h4>Dates Available:</h4>
-                <input type="date">
-                <input type="date">
-            </div>
-            <div class="input-container">
-                <h4>Amenities:</h4>
-                <input type="text">
-            </div>
-            <div class="input-container">
-                <h4>Price:</h4>
-                <input type="">
-            </div>
-            <div class="input-container">
-                <h4>Price:</h4>
-                <input type="">
-            </div>
-            <div class="input-container">
-                <h4>Price:</h4>
-                <input type="">
-            </div>
-            <div class="input-container">
-                <h4>Price:</h4>
-                <input type="">
-            </div>
-            <div class="input-container">
-                <h4>Price:</h4>
-                <input type="">
-            </div>
-        </div>
-        
+        </aside>
     </div>
 </div>
