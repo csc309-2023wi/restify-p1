@@ -48,7 +48,6 @@
 
     /* || Transitions */
     --tns-hov-quick: ease-in-out 0.1s;
-
 }
 
 html {
@@ -113,7 +112,7 @@ button:hover {
 }
 
 a {
-    color: var(--clr-purple-primary);
+    color: inherit;
     text-decoration: inherit;
 }
 
