@@ -190,6 +190,46 @@ div.property-text {
     background-image: url(../icons/comment-icon-dark.svg);
 }
 
+/* Property Cards (Status) */
+
+.property-card.with-status img.property-img {
+    height: 50%;
+}
+
+.property-card.with-status div.status-row {
+    padding: 0.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.property-card.with-status div.status-row span.status {
+    font-size: var(--font-size-reg);
+    padding: 0.25rem 0.5rem;
+    background-color: var(--clr-gray-light);
+    border-radius: var(--rad-tny);
+}
+
+.property-card.with-status div.status-row span.status.pending {
+    color: white;
+    background-color: #006aff;
+}
+
+.property-card.with-status div.status-row span.status.approved {
+    color: white;
+    background-color: var(--clr-green-dark);
+}
+
+.property-card.with-status div.status-row span.status.denied {
+    color: white;
+    background-color: var(--clr-red-important);
+}
+
+.property-card.with-status div.status-row span.status.expired {
+    color: white;
+    background-color: var(--clr-gray-mid-dark);
+}
+
 /* || Navigation Bar Styles */
 
 nav.nav-main {
