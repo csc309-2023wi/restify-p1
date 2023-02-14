@@ -213,14 +213,6 @@ nav.nav-main {
     column-gap: 1rem;
 }
 
-@media screen and (max-width: 45rem) {
-    input[type="text"].search {
-        grid-row: 2;
-        grid-column: 1 / 4;
-        justify-self: center;
-    }
-}
-
 span.logo-combo {
     justify-self: start;
     color: white;
@@ -320,6 +312,11 @@ div.popup {
     background-color: white;
     box-shadow: var(--shadow-med);
     transition: opacity var(--tns-hov-quick);
+}
+@media screen and (max-width: 45rem) {
+    div.popup-drawer-scrollable {
+        right: -5rem;
+    }
 }
 div.popup ul li {
     border-bottom: 1px var(--clr-gray-light) solid;
@@ -467,6 +464,14 @@ input[type="text"].search {
     background-position: 110% 50%;
     background-size: 30% 150%;
     background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 45rem) {
+    input[type="text"].search {
+        grid-row: 2;
+        grid-column: 1 / 4;
+        justify-self: center;
+    }
 }
 
 .search::placeholder {
