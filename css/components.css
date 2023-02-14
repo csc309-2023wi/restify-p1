@@ -61,13 +61,14 @@ a.action-btn:focus {
 
 aside.sidebar {
     position: sticky;
-    top: 5rem;
+    top: 8rem;
     left: 0;
     max-width: 20rem;
     min-width: 15rem;
     min-height: 20rem;
     background: var(--clr-green-bg);
-    margin: 2rem 3rem 5rem 0;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
     padding: 1.5rem;
     border-radius: 0 var(--rad-med) var(--rad-med) 0;
     word-break: break-all;
@@ -75,6 +76,7 @@ aside.sidebar {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    row-gap: 1rem;
 }
 aside.sidebar::before,
 aside.sidebar::after {
@@ -188,6 +190,46 @@ div.property-text {
     background-image: url(../icons/comment-icon-dark.svg);
 }
 
+/* Property Cards (Status) */
+
+.property-card.with-status img.property-img {
+    height: 50%;
+}
+
+.property-card.with-status div.status-row {
+    padding: 0.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.property-card.with-status div.status-row span.status {
+    font-size: var(--font-size-reg);
+    padding: 0.25rem 0.5rem;
+    background-color: var(--clr-gray-light);
+    border-radius: var(--rad-tny);
+}
+
+.property-card.with-status div.status-row span.status.pending {
+    color: white;
+    background-color: #006aff;
+}
+
+.property-card.with-status div.status-row span.status.approved {
+    color: white;
+    background-color: var(--clr-green-dark);
+}
+
+.property-card.with-status div.status-row span.status.denied {
+    color: white;
+    background-color: var(--clr-red-important);
+}
+
+.property-card.with-status div.status-row span.status.expired {
+    color: white;
+    background-color: var(--clr-gray-mid-dark);
+}
+
 /* || Navigation Bar Styles */
 
 nav.nav-main {
@@ -202,18 +244,22 @@ nav.nav-main {
     background-color: var(--clr-purple-primary);
     color: white;
     box-shadow: var(--shadow-med);
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; */
+    display: grid;
+    row-gap: 1rem;
+    column-gap: 1rem;
 }
 
 span.logo-combo {
+    justify-self: start;
     color: white;
     display: inline-flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     column-gap: 0.4rem;
     padding: 0.5rem 0.7rem;
     border-radius: var(--rad-sml) var(--rad-sml) var(--rad-sml) var(--rad-sml);
@@ -225,14 +271,16 @@ img.logo-icon {
 }
 
 span.tray-notif-avatar {
+    grid-column: 3 / 4;
     display: inline-flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     column-gap: 1rem;
 }
 
 button.btn-notif {
+    flex-shrink: 0;
     padding: 0.5rem;
     border-radius: 50%;
 }
@@ -304,6 +352,11 @@ div.popup {
     background-color: white;
     box-shadow: var(--shadow-med);
     transition: opacity var(--tns-hov-quick);
+}
+@media screen and (max-width: 45rem) {
+    div.popup-drawer-scrollable {
+        right: -5rem;
+    }
 }
 div.popup ul li {
     border-bottom: 1px var(--clr-gray-light) solid;
@@ -433,16 +486,17 @@ div.notif-strip p.notif-preview {
 
 input[type="text"],
 input[type="number"],
-input[type="password"] {
+input[type="password"],
+input[type="date"] {
     font-size: inherit;
     padding: 0.5rem 1rem;
-    border-radius: 2rem;
+    border-radius: 2.5rem;
     width: 100%;
+    margin-bottom: 0.5rem;
 }
 
 input[type="text"].search {
     color: white;
-    width: 20%;
     box-sizing: border-box;
     border: 2px solid white;
     background-color: var(--clr-purple-primary);
@@ -450,6 +504,14 @@ input[type="text"].search {
     background-position: 110% 50%;
     background-size: 30% 150%;
     background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 45rem) {
+    input[type="text"].search {
+        grid-row: 2;
+        grid-column: 1 / 4;
+        justify-self: center;
+    }
 }
 
 .search::placeholder {
@@ -507,7 +569,6 @@ input[type="number"].flat {
     border-left: none;
     border-right: none;
     background-color: transparent;
-    width: 75%;
     border-radius: 0%;
     padding-left: 10px;
     height: 33px;
@@ -515,11 +576,10 @@ input[type="number"].flat {
 
 input[type="date"].flat {
     position: relative;
-    font-size: 14.5px;
     border: 2px solid var(--clr-gray-dark);
     border-left: none;
     background-color: transparent;
-    width: 75%;
+    width: 100%;
     border-radius: 0%;
     padding-left: 10px;
     height: 33px;
@@ -541,15 +601,20 @@ input[type="text"].comments {
 }
 
 input[type="text"].search {
+    align-self: center;
+    justify-self: center;
     color: white;
-    width: 15rem;
     box-sizing: border-box;
     border: 2px solid white;
     background-color: var(--clr-purple-primary);
-    background-image: url("../icons/search.svg");
+    background-image: url("../icons/search-purple-primary-bg-white.svg");
     background-position: 110% 50%;
     background-size: 30% 150%;
     background-repeat: no-repeat;
+    margin-bottom: unset;
+    width: 20rem;
+    height: 2.5rem;
+    max-width: 90%;
 }
 
 .filter-inputs {
@@ -571,6 +636,7 @@ button.btn-map {
 
 button.btn-decrement {
     width: 2.5rem;
+    height: 33px;
     background-image: url("../icons/minus.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -595,7 +661,7 @@ button.btn-left {
     text-align: center;
     color: white;
     height: 33px;
-    width: 45px;
+    width: 4rem;
     padding: 1rem 0;
     background-color: var(--clr-gray-dark);
     border-bottom-left-radius: 15px;

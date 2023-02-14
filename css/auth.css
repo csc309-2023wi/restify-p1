@@ -1,67 +1,58 @@
 div.container {
+    margin: 2rem;
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: calc(100% - 123.5px);
+    flex-wrap: wrap-reverse;
     justify-content: space-evenly;
+    row-gap: 3rem;
+    column-gap: 2rem;
 }
-.signup-m{
+.signup-m {
     display: none;
 }
 
-div.sidebar{
+div.sidebar {
     padding: 1rem;
-    height: 80%;
     max-width: 21rem;
+    height: 20rem;
     background-color: var(--clr-purple-primary);
-    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     border-radius: 1rem;
 }
-.sidebar .action-btn{
-    width: 40%;
-    border: 1px solid white;
+
+div.sidebar h2,
+div.sidebar h3 {
+    color: white;
 }
-.auth-form{
-    height: 85%;
-    color: #666666;
+
+.auth-form {
+    color: var(--clr-gray-dark);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    row-gap: 1rem;
 }
-a.forgot{
+a.forgot {
     text-decoration: underline;
 }
-.red{
-    color: red;
+.red {
+    color: var(--clr-red-important);
     background-color: transparent;
 }
-input{
+input {
     width: 100%;
-    border: 1px solid #CDCDCD;
+    border: 1px solid #cdcdcd;
 }
-.auth-form .action-btn{
+.auth-form .action-btn {
     margin-left: 30%;
     width: 40%;
     border: 1px solid var(--clr-green-dark);
 }
-input[type="text"].rounded-r{
+input[type="text"].rounded-r {
     height: 36.5px;
     padding: 0.5rem 1rem;
-    border: 1px solid #CDCDCD;
+    border: 1px solid #cdcdcd;
 }
-
- @media only screen and (max-width: 645px) {
-    /* For mobile phones and tablets: */
-    div.container {
-        flex-direction: column;
-        align-items: center;
-    }
-    div.sidebar{
-        width: 100%;
-    }
-
-} 
