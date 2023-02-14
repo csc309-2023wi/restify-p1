@@ -2,6 +2,7 @@
 const templateChildrenUrls = {
     navContent: "templates/navbar.html",
     navSearchContent: "templates/navbar_search.html",
+    navAuthContent: "templates/navbar_auth.html",
     footerContent: "templates/footer.html",
     propertyCardGeneric: "templates/card_property_listing_generic.html",
     modalUserUnbooked: "templates/modal_user_unbooked.html",
