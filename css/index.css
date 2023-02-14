@@ -81,25 +81,7 @@ div.home-content {
 }
 @media only screen and (max-width: 610px) {
     /* For mobile phones and tablets: */
-    input[type="text"].search {
-        display: none;
-    }
-    input[type="text"].search-mb {
-        display: unset;
-        margin-top: 5px;
-        color: white;
-        width: 15rem;
-        box-sizing: border-box;
-        border: 2px solid white;
-        background-color: var(--clr-purple-primary);
-        background-image: url("../icons/search.svg");
-        background-position: 110% 50%;
-        background-size: 30% 150%;
-        background-repeat: no-repeat;
-    }
-    .search-mb::placeholder {
-        color: white;
-    }
+
     aside.sidebar {
         display: none;
     }
